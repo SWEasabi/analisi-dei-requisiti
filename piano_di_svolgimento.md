@@ -4,19 +4,44 @@ In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa.
 
 # Obiettivi
 
-- modulare la luminosità a seconda della quantità di persone o tipologia di entità?(Per noi sarebbe un obiettivo interessante ma secondario al modulare l'intensità solamente rilevando la presenza)
+Per progettare la soluzione abbiamo previsto, come assunto di base non derogabile, il fatto che il gestore sia in possesso di uno smartphone (Android o iOS) e nelle condizioni di utilizzare un browser web.
+L’obiettivo è sviluppare un’applicazione **web responsive** in grado di monitorare e di eseguire le azioni sotto menzionate sul sistema di illuminazione pubblico.
 
-- Rilevamento guasti è da gestire solo tramite sensori di luminosità o non ci sono constraint in questo campo?
+## Obiettivi obbligatori
 
-- Potrebbe aver senso dare la possibilità di impostare delle soglie di luminosità relativamente all'attivazione con presenza di entità?
-- L'accensione programmata dell'illuminazione si potrebbe integrare con previsioni di eventi normali(alba e tramonto) ed anomali come eclissi.
+- **Rilevamento della presenza di persone** in prossimità della fonte luminosa: attraverso sensori eterogenei (bluetooth, IR, videocamere, ecc.) il sistema rileva la presenza di persone in un’area della città gestita dal sistema e attiva le luci di conseguenza.
 
-- Potrebbe aver senso suddividere gli utenti in "gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto" , altro
-- Potrebbe aver senso creare una pagina disponibile ai "cittadini" dove questi possano (seguendo 2/3 passaggi) caricare una segnalazione di guasto?(obiettivo sencodario). Chiaramento l'inserimento manuale dei guasti da parte del manutentore è obiettivo primario.
+- Aumento/riduzione dell’intensità luminosa: il sistema deve essere in grado di comunicare attraverso un protocollo IoT l’aumento o la riduzione dell’intensità luminosa emessa da uno specifico impianto di illuminazione, permettendo una regolazione singola o per l’intera via/piazza (area coperta dal servizio).
 
-- Potrebbe aver senso immaginare integrazioni future con sistemi di alimentazione/UPS vari nella gestione guasti/distribuzione dell'alimentazione?
+- Rilevamento automatico del guasto di un impianto di illuminazione: il sistema deve rilevare ogni eventuale malfunzionamento dell’impianto di illuminazione, notificando il gestore ed aprendo un ticket di assistenza su una piattaforma esterna che permetta di identificare la località del guasto.
 
-- Potrebbe aver senso creare una dashboard/(api utilizzabile magari in futuro da pannellistica a led per mostrare ai cittadini i risparmi) che mostri i consumi ed i risparmi?
+- Segnalazione manuale del guasto di un impianto di illuminazione: il sistema deve permettere di inserire manualmente un nuovo guasto ad un impianto di illuminazione.
+
+- Aumento/riduzione manuale dell’intensità luminosa: il sistema deve permette al gestore di aumentare/ridurre o riportare in modalità automatica l’illuminazione di un singolo impianto luminoso o di un’intera area coperta dal servizio.
+
+- Inserimento e gestione di un impianto luminoso: il sistema deve permettere al gestore
+l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all’interno di un’area coperta dal servizio.
+
+- Aumento o riduzione globale dell’intensità luminosa: il sistema deve permettere al gestore l’aumento o la riduzione globale (su tutti gli impianti controllati dell’intensità luminosa, opzione particolarmente utile in condizioni di crepuscolo o luce lunare particolarmente intensa.
+
+## Obiettivi secondari
+
+- modulare la luminosità a seconda della quantità di persone o tipologia di entità;
+
+- Rilevamento tipologia guasti (Guasti locali o distribuiti, guasti a sistemi di alimentazione);
+
+- Preset di illuminazione per le varie situazioni
+
+- integrazione con previsioni di eventi normali(alba e tramonto) ed anomali come eclissi;
+
+- Gestione multi utente ("gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto" , altro)
+
+- Pagina disponibile ai "cittadini" dove questi possano (seguendo 2/3 passaggi, ad esempio caricando un'immagine del guasto) caricare una segnalazione di guasto.
+
+## Ottica di espansione futura
+- Integrazioni future con sistemi di alimentazione/UPS vari nella gestione guasti/distribuzione dell'alimentazione;
+
+- Api pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
 
 # Prima stesura architetturale
 
