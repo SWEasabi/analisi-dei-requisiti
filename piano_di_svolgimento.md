@@ -51,6 +51,19 @@ L'architettura seguirà quindi i principi base di un sistema a microservizi che 
 
 ## User stories / casi d'uso
 
+1. login e logout di un operatore
+2. collegamento di un impianto luminoso ai dati derivanti da un sensore (modalità automatica)
+3. gestione manuale di un impianto luminoso
+4. aumento o riduzione globale dell’intensità luminosa da parte di un operatore o tramite dati di un
+sensore
+5. aumento o riduzione locale (per area illuminata) dell’intensità luminosa da parte di un operatore o tramite dati di un sensore
+6. Gestione ticketing guasti
+7. inserimento e gestione di un impianto luminoso
+8. creazione, modifica e rimozione di nuove aree illuminate
+9. tracciamento delle intensità luminose di ogni impianto.
+10. Rilevamento della presenza in un’area illuminata e aumento automatico dell’intensità
+luminos
+
 ## Utenti
 
 Molteplici saranno gli utenti che utilizzeranno il sistema.
@@ -70,8 +83,10 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |Mqtt|Comunicazione delle componenti IoT |Mosquitto|
 |Database|Stoccaggio a lungo termine dei dati per un'analisi futura degli stessi per prevenire guasti o risolvere situazioni ricorrenti| Postgres|
 |Coordinatore|Coordinamento e gestione diretta degli apparati illuminanti| Python|
-|ApiREST|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
+|ApiREST del sistema d'illuminazione|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
+|Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
 |WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
+
 
 ## Gestione di Deploy
 
@@ -80,3 +95,9 @@ Per il deploy sarà utilizzato **Docker** per consentire, alla bisogna, lo scala
 ![prova](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png.webp)
 
 Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
+
+# Testing
+
+Ognuno dei servizi avrà la sua specifica strategia di testing.
+
+I test di ognuno dovranno avere comunque almeno l'80% di code coverage e dovranno essere correlati di report relativamente all'esecuzione degli stessi.
