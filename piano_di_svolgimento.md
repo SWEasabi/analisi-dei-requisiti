@@ -1,6 +1,6 @@
 # Piano di svolgimento
 
-In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa. Tutte queste ore ammoneranno almeno a €12000.
+In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa. Tutte queste ore ammoneranno almeno a €12000. Andiamo quindi ad analizzare le richieste e a stendere una massima relativamente al costo totale di progetto. Anche tenendo conto della tabella relativa ai ruoli.
 
 # Obiettivi
 
@@ -73,3 +73,10 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |ApiREST|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
 |WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
 
+## Gestione di Deploy
+
+Per il deploy sarà utilizzato **Docker** per consentire, alla bisogna, lo scalare orizzontale del sistema, così da poter gestire più utenti abbattendo i costi.
+
+![prova](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png.webp)
+
+Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
