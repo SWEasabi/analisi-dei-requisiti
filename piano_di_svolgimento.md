@@ -1,11 +1,15 @@
 # Piano di svolgimento
 
-In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa. Tutte queste ore ammoneranno almeno a €12000. Andiamo quindi ad analizzare le richieste e a stendere una massima relativamente al costo totale di progetto. Anche tenendo conto della tabella relativa ai ruoli.
+In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa. Tutte queste ore ammoneranno almeno a §12000. Andiamo quindi ad analizzare le richieste e a stendere una massima relativamente al costo totale di progetto. Anche tenendo conto della tabella relativa ai ruoli.
 
 # Obiettivi
 
-Per progettare la soluzione abbiamo previsto, come assunto di base non derogabile, il fatto che il gestore sia in possesso di uno smartphone (Android o iOS) e nelle condizioni di utilizzare un browser web.
+
 L’obiettivo è sviluppare un’applicazione **web responsive** in grado di monitorare e di eseguire le azioni sotto menzionate sul sistema di illuminazione pubblico.
+
+## Assunti preventivi
+
+- il gestore è in possesso di uno smartphone (Android o iOS) e nelle condizioni di utilizzare un browser web.
 
 ## Obiettivi obbligatori
 
@@ -101,3 +105,5 @@ Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
 Ognuno dei servizi avrà la sua specifica strategia di testing.
 
 I test di ognuno dovranno avere comunque almeno l'80% di code coverage e dovranno essere correlati di report relativamente all'esecuzione degli stessi.
+
+# Qualifica e MVP definito
