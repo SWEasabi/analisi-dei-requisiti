@@ -91,7 +91,6 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
 |WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
 
-
 ## Gestione di Deploy
 
 Per il deploy sarà utilizzato **Docker** per consentire, alla bisogna, lo scalare orizzontale del sistema, così da poter gestire più utenti abbattendo i costi.
