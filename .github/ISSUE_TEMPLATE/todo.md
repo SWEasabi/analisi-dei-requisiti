@@ -1,20 +1,12 @@
 ---
 name: TODO
 about: Template per una cosa da fare
-title: TODO - titolo
+title: TODO - _titolo_
 labels: ''
 assignees: ''
 
 ---
 
-**La tua feature risolve un problema? Descrivilo.**
-Descrizione [...]
+**Descrizione**
+Descrivi cosa c'è da fare in due parole e inserisci tutto l'utile per risolvere la issue
 
-**Descrivi la soluzione che proponi**
-Descrizione [...]
-
-**Descrivi una soluzione alternativa**
-Descrizione [...]
-
-**Extra**
-Aggiunti dettagli o screenshot riguardo la feature.
