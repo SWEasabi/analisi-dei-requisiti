@@ -55,7 +55,7 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 - Sistema ticketing
 - Sistema di _DB_
 
-## Storie _utente non loggato
+## Storie _utente non loggato_
 
 - utente non loggato può loggarsi
 
@@ -83,6 +83,8 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 - Lampadina riceve dal sistema un valore di luminosità e si regola di conseguenza
 
 ## Storie _sensore guasti_
+
+- Sensore guasti se rileva un guasto crea un ticket nel sistema di ticketing
 
 ## Storie _sensore dati_
 - Sensore dati invia al database il valore dell'intensità luminosa in un determinato momento
