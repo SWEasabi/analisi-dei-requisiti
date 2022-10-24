@@ -41,11 +41,6 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 4. aumento o riduzione globale dell’intensità luminosa da parte di un operatore o tramite dati di un
 sensore
 6. Gestione ticketing guasti
-7. inserimento e gestione di un impianto luminoso
-8. creazione, modifica e rimozione di nuove aree illuminate
-9. tracciamento delle intensità luminose di ogni impianto.
-10. Rilevamento della presenza in un’area illuminata e aumento automatico dell’intensità
-luminosa
 ---
 
 
@@ -56,6 +51,7 @@ luminosa
 - Utente Installatore/manutentore
 - Lampadina
 - Sensore guasti
+- Sensore dati
 - Sistema ticketing
 - Sistema di _DB_
 
@@ -66,17 +62,23 @@ luminosa
 ## Storie _utente gestore_
 
 - Utente gestore può regolare l'intensità luminosa di un singolo lampione
-
 - Utente gestore può regolare l'intensità di molteplici lampioni
 
 ## Storie _utente installatore/manutentore_
 
 - Utente installatore può creare nuovi account
+- Utente installatore può aggiungere al sistema un nuovo lampione
+- Utente installatore può aggiungere al sistema un nuovo sensore
+- Utente installatore può aggiungere al sistema aree di gestione illuminazione
 
 ## Storie _lampadina_
 
 - Lampadina può cambiare la sua luminosità
 
 ## Storie _sensore guasti_
+
+## Storie _sensore dati_
+- Sensore dati invia al database il valore dell'intensità luminosa
+- Sensore dati invia al sistema l'eventuale presenza di entità
 
 ## Storie _sistema ticketing_
