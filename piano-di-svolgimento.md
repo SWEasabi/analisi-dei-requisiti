@@ -66,7 +66,7 @@ sensore
 8. creazione, modifica e rimozione di nuove aree illuminate
 9. tracciamento delle intensità luminose di ogni impianto.
 10. Rilevamento della presenza in un’area illuminata e aumento automatico dell’intensità
-luminos
+luminosa
 
 ## Utenti
 
@@ -74,7 +74,7 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 
 |Utente| utilizzi | Tipo di requisito|
 |---|---|---|
-|Semplice cittadino|Puà vedere una dashboard relativa all'illuminazione| Aggiuntivo|
+|Semplice cittadino|Può vedere una dashboard relativa all'illuminazione| Aggiuntivo|
 |Gestore dell'illuminazione| Può impostare l'illuminazione| Obbligatorio|
 |Gestore momentaneo| Può impostare l'illuminazione per un periodo limitato di tempo|Aggiuntivo |
 |Installatore/manutentore|Aggiunge nuove sezioni illuminanti, risolve i guasti|Obbligatorio|
@@ -90,7 +90,6 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |ApiREST del sistema d'illuminazione|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
 |Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
 |WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
-
 
 ## Gestione di Deploy
 
