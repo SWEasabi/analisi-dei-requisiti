@@ -63,9 +63,7 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 
 - Utente gestore può regolare l'intensità luminosa di un singolo lampione
 - Utente gestore può regolare l'intensità di molteplici lampioni
-
 - Utente gestore può emettere un ticket di guasto su un impianto
-
 - Utente gestore può emettere un ticket di guasto su un lampione
 
 ## Storie _utente installatore/manutentore_
@@ -82,11 +80,12 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 ## Storie _lampadina_
 
 - Lampadina può cambiare la sua luminosità
+- Lampadina riceve dal sistema un valore di luminosità e si regola di conseguenza
 
 ## Storie _sensore guasti_
 
 ## Storie _sensore dati_
-- Sensore dati invia al database il valore dell'intensità luminosa
+- Sensore dati invia al database il valore dell'intensità luminosa in un determinato momento
 - Sensore dati invia al sistema l'eventuale presenza di entità
 
 ## Storie _sistema ticketing_
