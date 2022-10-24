@@ -2,12 +2,18 @@
 
 ## Utenti ed attori
 
-- Utente registrato
+- Utente gestore
+- Utente Installatore/manutentore
 - Utente comune
 - Lampadina
 - Sensore guasti
+- Sistema ticketing
 
-## Storie _utente registrato_
+## Storie _utente gestore_
+
+- Utente gestore può regolare l'intensità luminosa di un singolo lampione
+
+- Utente gestore può regolare l'intensità di molteplici lampioni
 
 ## Storie _utente comune_
 
@@ -28,12 +34,8 @@
 
 - Segnalazione manuale del guasto di un impianto di illuminazione: il sistema deve permettere di inserire manualmente un nuovo guasto ad un impianto di illuminazione.
 
-- Aumento/riduzione manuale dell’intensità luminosa: il sistema deve permette al gestore di aumentare/ridurre o riportare in modalità automatica l’illuminazione di un singolo impianto luminoso o di un’intera area coperta dal servizio.
-
 - Inserimento e gestione di un impianto luminoso: il sistema deve permettere al gestore
 l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all’interno di un’area coperta dal servizio.
-
-- Aumento o riduzione globale dell’intensità luminosa: il sistema deve permettere al gestore l’aumento o la riduzione globale (su tutti gli impianti controllati dell’intensità luminosa, opzione particolarmente utile in condizioni di crepuscolo o luce lunare particolarmente intensa.
 
 ## Obiettivi secondari
 
