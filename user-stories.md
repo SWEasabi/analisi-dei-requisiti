@@ -1,28 +1,4 @@
-# User stories
-
-## Utenti ed attori
-
-- Utente gestore
-- Utente Installatore/manutentore
-- Utente comune
-- Lampadina
-- Sensore guasti
-- Sistema ticketing
-
-## Storie _utente gestore_
-
-- Utente gestore può regolare l'intensità luminosa di un singolo lampione
-
-- Utente gestore può regolare l'intensità di molteplici lampioni
-
-## Storie _utente comune_
-
-## Storie _lampadina_
-
-## Storie _sensore guasti_
-
-
----------------
+# Descrizione testuale
 
 ## Obiettivi obbligatori
 
@@ -56,35 +32,51 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 
 - Api pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
 
-# Prima stesura architetturale
 
-Visto l'**ambito critico** di operazione del prodotto software per noi i capostipiti nello sviluppo di questo progetto saranno: **alta modularità, alta scalabilità, alta resilienza e facile estensibilità** dello stesso.
 
-L'architettura seguirà quindi i principi base di un sistema a microservizi che tenga conto di tutte queste importanti questioni.
+# Analisi
 
-## User stories / casi d'uso
-
-1. login e logout di un operatore
+----
 2. collegamento di un impianto luminoso ai dati derivanti da un sensore (modalità automatica)
-3. gestione manuale di un impianto luminoso
 4. aumento o riduzione globale dell’intensità luminosa da parte di un operatore o tramite dati di un
 sensore
-5. aumento o riduzione locale (per area illuminata) dell’intensità luminosa da parte di un operatore o tramite dati di un sensore
 6. Gestione ticketing guasti
 7. inserimento e gestione di un impianto luminoso
 8. creazione, modifica e rimozione di nuove aree illuminate
 9. tracciamento delle intensità luminose di ogni impianto.
 10. Rilevamento della presenza in un’area illuminata e aumento automatico dell’intensità
 luminosa
+---
 
-## Utenti
 
-Molteplici saranno gli utenti che utilizzeranno il sistema.
+## Utenti ed attori
 
-|Utente| utilizzi | Tipo di requisito|
-|---|---|---|
-|Semplice cittadino|Può vedere una dashboard relativa all'illuminazione| Aggiuntivo|
-|Gestore dell'illuminazione| Può impostare l'illuminazione| Obbligatorio|
-|Gestore momentaneo| Può impostare l'illuminazione per un periodo limitato di tempo|Aggiuntivo |
-|Installatore/manutentore|Aggiunge nuove sezioni illuminanti, risolve i guasti|Obbligatorio|
-|Verificatore di impianto|Gira a controllare periodicamente se ci sono guasti ai corpi illuminanti| Obbligatorio|
+- Utente non loggato
+- Utente gestore
+- Utente Installatore/manutentore
+- Lampadina
+- Sensore guasti
+- Sistema ticketing
+- Sistema di _DB_
+
+## Storie _utente non registrato_
+
+- utente non loggato può loggarsi
+
+## Storie _utente gestore_
+
+- Utente gestore può regolare l'intensità luminosa di un singolo lampione
+
+- Utente gestore può regolare l'intensità di molteplici lampioni
+
+## Storie _utente installatore/manutentore_
+
+- Utente installatore può creare nuovi account
+
+## Storie _lampadina_
+
+- Lampadina può cambiare la sua luminosità
+
+## Storie _sensore guasti_
+
+## Storie _sistema ticketing_
