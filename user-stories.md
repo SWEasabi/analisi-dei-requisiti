@@ -12,7 +12,6 @@
 
 5. Aumento/riduzione manuale dell’intensità luminosa: il sistema deve permette al gestore di aumentare/ridurre o riportare in modalità automatica l’illuminazione di un singolo impianto luminoso o di un’intera area coperta dal servizio.
 
-
 6. Inserimento e gestione di un impianto luminoso: il sistema deve permettere al gestore
 l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all’interno di un’area coperta dal servizio.
 
@@ -63,6 +62,8 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 
 - Utente gestore può regolare l'intensità luminosa di un singolo lampione
 - Utente gestore può regolare l'intensità di molteplici lampioni
+- Utente gestore può impostare su automatico o manuale l'intensità luminosa di un singolo lampione
+- Utente gestore può impostare su automatico o manuale l'intensità luminosa di un impianto
 - Utente gestore può emettere un ticket di guasto su un impianto
 - Utente gestore può emettere un ticket di guasto su un lampione
 
