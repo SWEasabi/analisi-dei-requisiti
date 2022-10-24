@@ -1,3 +1,23 @@
+# User stories
+
+## Utenti ed attori
+
+- Utente registrato
+- Utente comune
+- Lampadina
+- Sensore guasti
+
+## Storie _utente registrato_
+
+## Storie _utente comune_
+
+## Storie _lampadina_
+
+## Storie _sensore guasti_
+
+
+---------------
+
 ## Obiettivi obbligatori
 
 - **Rilevamento della presenza di persone** in prossimità della fonte luminosa: attraverso sensori eterogenei (bluetooth, IR, videocamere, ecc.) il sistema rileva la presenza di persone in un’area della città gestita dal sistema e attiva le luci di conseguenza.
