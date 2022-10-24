@@ -74,10 +74,6 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 - Utente installatore può aggiungere al sistema un nuovo sensore
 - Utente installatore può aggiungere al sistema aree di gestione illuminazione
 
-- Utente installatore può aggiungere un nuovo sensore al sistema
-
-- Utente installatore può aggiungere un nuovo lampione al sistema
-
 ## Storie _lampadina_
 
 - Lampadina può cambiare la sua luminosità
