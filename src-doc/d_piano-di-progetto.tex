@@ -1,0 +1,33 @@
+\documentclass{report}
+\input{config}
+
+\renewcommand{\title}{Preventivo costi}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{7cm}{l | X}            
+            \textbf{Approvazione} & Peron Samuel\\
+            \textbf{Redazione} & Massarenti Alessandro\\
+            \textbf{Verifica} & Bonavigo Michele\\
+            & Massarenti Alessandro\\
+            \hline
+            \textbf{Uso} & Esterno\\
+            \textbf{Destinatario} & Committente\\
+            & Cliente \\
+        \end{tabularx}
+    \end{center}
+}
+
+\begin{document}
+
+\input{\gassets global-tex-assets/tex/header}
+
+\tableofcontents
+
+\newpage
+
+\chapter{Casi d'uso}
+\input{contenuti/use-cases}
+
+\end{document}
