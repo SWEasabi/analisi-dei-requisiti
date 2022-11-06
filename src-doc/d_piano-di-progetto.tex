@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 \input{config}
 
 \renewcommand{\title}{Preventivo costi}
@@ -7,23 +7,27 @@
     \normalsize
     \begin{center}
         \begin{tabularx}{7cm}{l | X}            
-            \textbf{Approvazione} & Massarenti Alessandro\\
-            \textbf{Redazione} & Peron Samuel\\
-            &Massarenti Alessandro\\
+            \textbf{Approvazione} & Peron Samuel\\
+            \textbf{Redazione} & Massarenti Alessandro\\
             \textbf{Verifica} & Pierobon Luca\\
+            & Massarenti Alessandro\\
             \hline
             \textbf{Uso} & Esterno\\
             \textbf{Destinatario} & Committente\\
+            & Cliente \\
         \end{tabularx}
     \end{center}
 }
 
 \begin{document}
 
-\input{\gassets assets_globali/tex/header}
+\input{\gassets global-tex-assets/tex/header}
 
 \tableofcontents
 
 \newpage
+
+\chapter{Casi d'uso}
+\input{contenuti/use-cases}
 
 \end{document}
