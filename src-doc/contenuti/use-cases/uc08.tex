@@ -1,0 +1,39 @@
+\section{UC08 - Gestione area illuminazione}
+
+\paragraph{Descrizione:}
+Come utente loggato, voglio poter:
+\begin{itemize}
+    \item inserire nel sistema nuovi impianti luminosi
+    \item inserire o rimuovere impianti luminosi all'interno di un'area coperta dal servizio
+\end{itemize}
+
+
+\paragraph{Attore principale:}
+Utente Gestore.
+
+\paragraph{Precondizioni:}
+L'utente deve essere loggato e deve essere utente gestore, dalla percentuale impostata a tempo 0.
+
+\paragraph{Post-condizioni:}
+Il sistema e/o il servizio di illuminazione hanno subito delle modifiche:
+\begin{itemize}
+    \item è stato aggiunto nel sistema un nuovo impianto di illuminazione 
+    \item è stato aggiunto oppure rimosso un impianto di illuminazione dal servizio di illuminazione
+\end{itemize}
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item L’utente avvia la procedura per l’inserimento di un nuovo impianto;
+    \item Il sistema richiede le caratteristiche tecniche, la posizione geografica e il raggio d'azione;
+    \item Il sistema richiede di specificare a quale area di illuminazione farà riferimento il nuovo impianto;
+\end{enumerate}
+Oppure:
+\begin{enumerate}
+    \item L’utente avvia la procedura per la rimozione di un impianto;
+    \item Il sistema richiede di specificare a quale area di illuminazione fa riferimento l'impianto da rimuovore;
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente fornisce un'area geografica per l'impianto inesistente o non coperta dal servizio di illuminazione scelto.
+\end{enumerate}
