@@ -1,0 +1,32 @@
+\section{UC04 - Ticket di guasto}
+
+\paragraph{Descrizione:} viene aperto un ticket di assistenza ogni qual volta si verifichi un guasto ad un impianto di illuminazione:
+\begin{itemize}
+    \item il sistema rileva ogni
+    eventuale malfunzionamento dell’impianto di illuminazione
+    \item un utente gestore loggato inserisce un nuovo guasto ad un impianto di illuminazione
+\end{itemize}
+
+
+\paragraph{Attore principale:}
+Sistema ticketing.
+
+\paragraph{Precondizioni:}
+Il sistema e/o l'utente gestore devono segnalare un avvenuto guasto ad un impianto di illuminazione
+
+\paragraph{Post-condizioni:}
+Il guasto è stato risolto e l'impianto di illuminazione è tornato funzionante al 100\%
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item Il sistema rileva o l'utente gestore inserisce un malfunzionamento ad un impianto di illuminazione;
+    \item Il sistema informa il gestore sul guasto e apre un ticket di assistenza;
+    \item La piattaforma di ticketing identifica la località del guasto;
+    \item Il guasto viene risolto e l'impianto ritorna funzionante
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente gestore fornisce un'area geografica per l'impianto malfunzionanete inesistente;
+    \item Il guasto rende l'impianto parzialmente o totalmente inutilizzabile rendendo quindi necessaria una sostituzione;
+\end{enumerate}
