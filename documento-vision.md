@@ -91,11 +91,13 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
 |WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
 
+![grafico-dei-servizi](grafico-servizi.png)
+
 ## Gestione di Deploy
 
 Per il deploy sarà utilizzato **Docker** per consentire, alla bisogna, lo scalare orizzontale del sistema, così da poter gestire più utenti abbattendo i costi.
 
-![prova](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png.webp)
+![docker](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png.webp)
 
 Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
 
@@ -104,5 +106,3 @@ Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
 Ognuno dei servizi avrà la sua specifica strategia di testing.
 
 I test di ognuno dovranno avere comunque almeno l'80% di code coverage e dovranno essere correlati di report relativamente all'esecuzione degli stessi.
-
-# Qualifica e MVP definito
