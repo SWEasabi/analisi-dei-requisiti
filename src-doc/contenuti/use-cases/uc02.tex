@@ -1,0 +1,31 @@
+\section{UC02 - Regolare luminosità di un singolo campione}
+
+\paragraph{Descrizione:}
+Come utente gestore, voglio regolare la luminosità di un singolo lampione.
+
+\paragraph{Attore principale:}
+Utente gestore.
+
+\paragraph{Attori secondari:}
+\begin{itemize}
+    \item Lampadina.
+\end{itemize}
+
+\paragraph{Precondizioni:}
+L'utente ha effettuato il login, è stato riconosciuto come gestore e desidera regolare la luminosità di un singolo lampione.
+
+\paragraph{Post-condizioni:}
+La luminosità del lampione è stata regolata e il cambiamento viene riflesso nella luce emanata dalla lampadina.
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item L'utente gestore entra nella pagina relativa al lampione;
+    \item l'utente gestore modifica la luminosità del lampione;
+    \item il sistema salva i cambiamenti;
+    \item la lampadina modifica la propria luminosità.
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente gestore inserisce un valore non ammesso per la luminosità e il sistema ritorna un errore.
+\end{enumerate}
