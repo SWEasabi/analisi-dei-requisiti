@@ -1,0 +1,28 @@
+\section{UC01 - Login}
+
+\paragraph{Descrizione:}
+Come utente non loggato, voglio autenticarmi utilizzando le mie username e password, così da poter accedere al sistema.
+
+\paragraph{Attore principale:}
+Utente non loggato.
+
+\paragraph{Precondizioni:}
+L'utente fa parte del gruppo di utenti che possono effettuare l'accesso al sistema, e non è riconosciuto da esso.
+
+\paragraph{Post-condizioni:}
+Il sistema riconosce l'utente, che potrà essere:
+\begin{itemize}
+    \item utente gestore;
+    \item utente installatore/manutentore.
+\end{itemize}
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item L'utente inserisce il suo username;
+    \item L'utente inserisce la sua password.
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente fornisce delle credenziali errate e il sistema ritorna un errore.
+\end{enumerate}
