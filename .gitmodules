@@ -1,3 +1,4 @@
-[submodule "global-tex-assets"]
-	path = global-tex-assets
-	url = git@github.com:SWEasabi/global-tex-assets.git
+[submodule "global-assets"]
+	path = global-assets
+	url = git@github.com:SWEasabi/global-assets.git
+	branch = main
