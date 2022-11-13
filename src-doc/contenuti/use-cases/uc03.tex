@@ -1,19 +1,34 @@
 \section{UC03 - regolare luminosità molteplici lampioni}
 
 \paragraph{Descrizione:}
-Come utente loggato, voglio poter manipolare lo stato di molteplici lampioni.
+Come utente gestore, voglio poter manipolare lo stato di molteplici lampioni.
 
 \paragraph{Attore principale:}
 
-Utente Gestore
+Utente Gestore.
+
+\paragraph{Attori secondari:}
+\begin{itemize}
+    \item Lampadine.
+\end{itemize}
 
 \paragraph{Precondizioni:}
-L'utente deve essere loggato e deve essere utente gestore, dalla percentuale impostata a tempo 0.
+L'utente deve essere loggato e deve essere riconsociuto come utente gestore,
+vuole modificare il livello di intensità luminosa di molteplici lampioni .
+
 
 \paragraph{Post-condizioni:}
-I lampioni sono manipolati nella intensità scelta.
+I lampioni sono manipolati rispecchiando l'intensità scelta.
+
 \paragraph{Scenario principale:}
 \begin{itemize}
-    \item utente gestore manipola lo slider dell'intensità luminosa;
-    \item utente gestore preme lo stato di conferma;
+    \item utente gestore accede alla pagina relativa all'insieme di lampioni.
+    \item utente gestore manipola il valore relativo all'intensità luminosa.
+    \item il sistema salva i cambiamenti, in linea con l'intensita' scelta.
+    \item i lampioni modificano la loro intensita' luminosa in base ai parametri scelti.
 \end{itemize}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente gestore applica un valore non consentito per la luminosità , il sistema ritorna un errore.
+\end{enumerate}
