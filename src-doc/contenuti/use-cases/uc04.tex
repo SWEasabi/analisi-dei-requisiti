@@ -1,0 +1,35 @@
+\section{UC04 - Apertura ticket di guasto}
+
+\paragraph{Descrizione:}
+Come \textit{attore principale}(utente gestore/sensore di guasti) desidero aprire un ticket di assistenza in caso di guasto ad un impianto di illuminazione.
+
+\paragraph{Attori principali:}
+\begin{itemize}
+    \item Utente gestore;
+    \item Sensore guasti.
+\end{itemize}
+
+\paragraph{Attori secondari:}
+\begin{itemize}
+    \item Sistema ticketing.
+\end{itemize}
+
+\paragraph{Precondizioni:}
+L'utente gestore è loggato, e vuole aprire un ticket di guasto.
+
+\paragraph{Post-condizioni:}
+Il ticket di guasto è stato aperto nel sistema di ticketing.
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item L'attore principale rileva il guasto;
+    \item l'attore principale inserisce le informazioni sul guasto;
+    \item l'attore principale apre il ticket con le informazione inserite;
+    \item il sistema di ticketing riceve le informazioni e conferma l'apertura del ticket.
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{itemize}
+    \item L'attore principale ha inserito informazioni errate e il sistema mostra un errore;
+    \item il sistema di ticketing non risponde e il sistema mostra un errore.
+\end{itemize}
