@@ -1,38 +1,28 @@
 \section{UC08 - Aggiunta area gestione illuminazione}
 
 \paragraph{Descrizione:}
-Come installatore/manutentore, voglio poter:
-\begin{itemize}
-    \item inserire nel sistema nuovi impianti luminosi
-    \item inserire o rimuovere impianti luminosi all'interno di un'area coperta dal servizio
-\end{itemize}
-
+Come installatore/manutentore, voglio poter aggiungere una nuova area gestione illuminazione raggruppando più lampioni.
 
 \paragraph{Attore principale:}
 Utente installatore/manutentore.
 
 \paragraph{Precondizioni:}
-L'utente deve essere loggato e deve essere utente gestore.
+L'utente è loggato come installatore/manutentore, e vuole aggiungere un area di gestione illuminazione raggruppando più lampioni.
+
 \paragraph{Post-condizioni:}
-L'area di illuminazione è stata aggiunta:
-\begin{itemize}
-    \item è stato aggiunto nel sistema un nuovo impianto di illuminazione 
-    \item è stato aggiunto oppure rimosso un impianto di illuminazione dal servizio di illuminazione
-\end{itemize}
+Più lampioni sono stati raggruppati in una nuova area di gestione illuminazione, e possono ora essere controllati anche in gruppo da un utente gestore.
 
 \paragraph{Scenario principale:}
 \begin{enumerate}
-    \item L’utente avvia la procedura per l’inserimento di un nuovo impianto;
-    \item Il sistema richiede le caratteristiche tecniche, la posizione geografica e il raggio d'azione;
-    \item Il sistema richiede di specificare a quale area di illuminazione farà riferimento il nuovo impianto;
-\end{enumerate}
-Oppure:
-\begin{enumerate}
-    \item L’utente avvia la procedura per la rimozione di un impianto;
-    \item Il sistema richiede di specificare a quale area di illuminazione fa riferimento l'impianto da rimuovore;
+    \item L'utente installatore/manutentore crea la nuova area di gestione illuminazione, inserendo i dati dell'area;
+    \item l'utente installatore/manutentore seleziona i vari lampioni da raggruppare;
+    \item l'utente installatore/manutentore conferma l'operazione di aggiunta dei lampioni.
 \end{enumerate}
 
 \paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item L'utente fornisce un'area geografica per l'impianto inesistente o non coperta dal servizio di illuminazione scelto.
-\end{enumerate}
+\begin{itemize}
+    \item L'utente installatore/manutentore inserisce uno o più dati errati e il sistema mostra un errore.
+\end{itemize}
+% non è stata aggiunta tra gli scenari alternativi il blocco di creazione dell'area per mancanza di lampioni, perché si è pensato che 
+% l'utente installatore/manutentore possa prima creare l'area di gestione e in momenti futuri aggiungere i lampioni
+% => use case "modifica area gestione illuminazione"
