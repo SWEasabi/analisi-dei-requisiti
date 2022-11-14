@@ -1,11 +1,10 @@
-# Piano di svolgimento
+# Vision
 
-In linea di massima le ore produttive che potremo utilizzare saranno 95 a testa. Tutte queste ore ammoneranno almeno a §12000. Andiamo quindi ad analizzare le richieste e a stendere una massima relativamente al costo totale di progetto. Anche tenendo conto della tabella relativa ai ruoli.
+In questo documento viene descritta una linea generale dell'idea di svolgimento del progetto.
 
 # Obiettivi
 
-
-L’obiettivo è sviluppare un’applicazione **web responsive** in grado di monitorare e di eseguire le azioni sotto menzionate sul sistema di illuminazione pubblico.
+L’obiettivo è sviluppare un sitema con componenti **web responsive** in grado di monitorare e di eseguire le azioni sotto menzionate sul sistema di illuminazione pubblico di una città.
 
 ## Assunti preventivi
 
@@ -36,18 +35,18 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 
 - Preset di illuminazione per le varie situazioni
 
-- integrazione con previsioni di eventi normali(alba e tramonto) ed anomali come eclissi;
+- integrazione con previsioni di eventi normali (alba e tramonto) ed anomali come eclissi;
 
-- Gestione multi utente ("gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto" , altro)
+- Gestione multi utente ("gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto", altro)
 
 - Pagina disponibile ai "cittadini" dove questi possano (seguendo 2/3 passaggi, ad esempio caricando un'immagine del guasto) caricare una segnalazione di guasto.
 
 ## Ottica di espansione futura
 - Integrazioni future con sistemi di alimentazione/UPS vari nella gestione guasti/distribuzione dell'alimentazione;
 
-- Api pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
+- API pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
 
-# Prima stesura architetturale
+# Vision architetturale
 
 Visto l'**ambito critico** di operazione del prodotto software per noi i capostipiti nello sviluppo di questo progetto saranno: **alta modularità, alta scalabilità, alta resilienza e facile estensibilità** dello stesso.
 
@@ -76,9 +75,7 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |---|---|---|
 |Semplice cittadino|Può vedere una dashboard relativa all'illuminazione| Aggiuntivo|
 |Gestore dell'illuminazione| Può impostare l'illuminazione| Obbligatorio|
-|Gestore momentaneo| Può impostare l'illuminazione per un periodo limitato di tempo|Aggiuntivo |
 |Installatore/manutentore|Aggiunge nuove sezioni illuminanti, risolve i guasti|Obbligatorio|
-|Verificatore di impianto|Gira a controllare periodicamente se ci sono guasti ai corpi illuminanti| Obbligatorio|
 
 ## Servizi
 
@@ -86,16 +83,16 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |---|---|---|
 |Mqtt|Comunicazione delle componenti IoT |Mosquitto|
 |Database|Stoccaggio a lungo termine dei dati per un'analisi futura degli stessi per prevenire guasti o risolvere situazioni ricorrenti| Postgres|
-|Coordinatore|Coordinamento e gestione diretta degli apparati illuminanti| Python|
+|Coordinatore|Coordinamento e gestione diretta degli apparati illuminanti| Python, Java, da vedere|
 |ApiREST del sistema d'illuminazione|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
 |Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
-|WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
+|WebApp|Consente agli utenti (definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
+
+![grafico-dei-servizi](grafico-servizi.png)
 
 ## Gestione di Deploy
 
 Per il deploy sarà utilizzato **Docker** per consentire, alla bisogna, lo scalare orizzontale del sistema, così da poter gestire più utenti abbattendo i costi.
-
-![prova](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png.webp)
 
 Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
 
@@ -104,5 +101,3 @@ Il sistema sarà _multi-tennant_ as a service oppure installabile _on premise_.
 Ognuno dei servizi avrà la sua specifica strategia di testing.
 
 I test di ognuno dovranno avere comunque almeno l'80% di code coverage e dovranno essere correlati di report relativamente all'esecuzione degli stessi.
-
-# Qualifica e MVP definito
