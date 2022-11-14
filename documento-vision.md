@@ -35,16 +35,16 @@ l’inserimento di nuovi impianti luminosi e il loro inserimento o rimozione all
 
 - Preset di illuminazione per le varie situazioni
 
-- integrazione con previsioni di eventi normali(alba e tramonto) ed anomali come eclissi;
+- integrazione con previsioni di eventi normali (alba e tramonto) ed anomali come eclissi;
 
-- Gestione multi utente ("gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto" , altro)
+- Gestione multi utente ("gestore illuminazione pubblica", "installatore/manutentore", "Verificatore d'impianto", altro)
 
 - Pagina disponibile ai "cittadini" dove questi possano (seguendo 2/3 passaggi, ad esempio caricando un'immagine del guasto) caricare una segnalazione di guasto.
 
 ## Ottica di espansione futura
 - Integrazioni future con sistemi di alimentazione/UPS vari nella gestione guasti/distribuzione dell'alimentazione;
 
-- Api pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
+- API pubblica regolamentata utilizzabile in futuro da pannellistica a led per mostrare ai cittadini i risparmi o altro.
 
 # Vision architetturale
 
@@ -86,7 +86,7 @@ Molteplici saranno gli utenti che utilizzeranno il sistema.
 |Coordinatore|Coordinamento e gestione diretta degli apparati illuminanti| Python, Java, da vedere|
 |ApiREST del sistema d'illuminazione|Api Backend per la webapp e altri utilizzi futuri|Python, Flask|
 |Backend/Api Ticketing|Gestisce il sistema di ticketing dei guasti|Python, Flask|
-|WebApp|Consente agli utenti(Definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
+|WebApp|Consente agli utenti (definiti più avanti) di interfacciarsi con il sistema|VueJs o React|
 
 ![grafico-dei-servizi](grafico-servizi.png)
 
