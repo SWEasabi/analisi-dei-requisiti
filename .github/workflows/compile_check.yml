@@ -1,0 +1,29 @@
+on: [push, pull_request]
+
+jobs:
+  build_docs:
+    runs-on: ubuntu-latest
+    name: Build Documents
+    steps:
+      - name: 🚧 Set up Git repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      
+      - name: ⚙ Build LaTeX files
+        run: |
+          docker run -i --rm -v "$(pwd)/:/work" -w /work ghcr.io/xu-cheng/texlive-full bash -c '
+            shopt -s globstar
+            set -e
+            for d_path in ./**/d_*.tex; do (
+              cd "$(dirname $d_path)"
+              latexmk -lualatex $(basename $d_path)
+            ) done'
+            
+      - name: 🧬 Generate artifact containing PDF files
+        uses: actions/upload-artifact@v3
+        with:
+          name: verbali
+          path: "**/*.pdf"
+          
+  #TODO: GitHub Page
