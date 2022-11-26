@@ -49,7 +49,7 @@ jobs:
           cd apindex
           rm share/apindex/index.template.html
           curl -o share/apindex/index.template.html https://raw.githubusercontent.com/SWEasabi/global-assets/main/html/ghpages_template.html
-          sed -i "34d; 35i Verbali" share/apindex/index.template.html
+          sed -i "34d; 35i Analisi dei requisiti" share/apindex/index.template.html
           cmake . -DCMAKE_INSTALL_PREFIX=/usr
           sudo make install
           cd ..
