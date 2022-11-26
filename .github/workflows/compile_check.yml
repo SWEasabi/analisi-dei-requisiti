@@ -23,7 +23,45 @@ jobs:
       - name: 🧬 Generate artifact containing PDF files
         uses: actions/upload-artifact@v3
         with:
-          name: verbali
+          name: analisireq
           path: "**/*.pdf"
           
-  #TODO: GitHub Page
+  build_ghpages:
+    runs-on: ubuntu-latest
+    name: Build GitHub Pages
+    needs: build_docs
+    steps:
+      - name: 🚧 Set up Git repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: recursive
+      
+      - name: ⬇ Download artifact analisireq
+        uses: actions/download-artifact@v3.0.1
+        with:
+          name: analisireq
+          path: ./analisireq
+
+      - name: ⚒ Install apindex and update HTML template
+        run: |
+          git clone --depth=1 https://github.com/paperbenni/apindex.git
+          cd apindex
+          rm share/apindex/index.template.html
+          curl -o share/apindex/index.template.html https://raw.githubusercontent.com/SWEasabi/global-assets/main/html/ghpages_template.html
+          sed -i "34d; 35i Verbali" share/apindex/index.template.html
+          cmake . -DCMAKE_INSTALL_PREFIX=/usr
+          sudo make install
+          cd ..
+          rm -rf apindex
+        
+      - name: ⚙ Build static page
+        run: apindex ./analisireq
+        
+      - name: 🧬 Generate artifact containing Directory Listings Page
+        uses: actions/upload-artifact@v3
+        with:
+          name: analisireq_html
+          path: ./analisireq
+          
+  #TODO: Deploy
