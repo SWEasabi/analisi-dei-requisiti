@@ -42,6 +42,9 @@ jobs:
         with:
           name: analisireq
           path: ./analisireq
+          
+      - name: ✍Remove prefix d_ in PDF files
+        run: find . -type f -name 'd_*.pdf' | while read f; do mv "$f" "${f/d_/}"; done
 
       - name: ⚒ Install apindex and update HTML template
         run: |
