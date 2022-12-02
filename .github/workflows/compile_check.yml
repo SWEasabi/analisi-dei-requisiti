@@ -28,6 +28,7 @@ jobs:
           
   build_ghpages:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     name: Build GitHub Pages
     needs: build_docs
     steps:
