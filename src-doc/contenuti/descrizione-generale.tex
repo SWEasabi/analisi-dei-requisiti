@@ -4,6 +4,20 @@
 L'obiettivo del progetto è la realizzazione di un portale, che permette la visualizzazione, la gestione e la manutenzione di entità varie, tra cui lampioni, sensori, assieme ad una gestione del ticketing.
 Nello specifico, lo scopo finale del progetto è quello di fornire agli utenti la capacità di interagire con la piattaforma con limiti definiti per tipologia di utente, con il supporto di entità automatizzate.
 
+\section{Caratteristiche degli utenti}
+
+Presupponiamo che più tipologie di utenti fisici interagiscano con il sistema, questo richiede un sistema di autenticazione e di autorizzazione.
+Ognuno dei nostri utenti che analizzeremo avrà specifici ruoli, bisogni e responsabilità.
+Il loro mezzo di interazione è un'interfaccia web\footnote{come richiesto dal capitolato}, tramite questa potranno accedere alle funzionalità di cui hanno bisogno.
+
+Descriviamo ora le tipologie di utenti e i loro bisogni.
+
+\paragraph{Utente gestore:} L'utente gestore avrà bisogno di visualizzare i lampioni e il loro stato, di modificarne l'intensità luminosa e di settare vari parametri sugli stessi. Dovrà inoltre poter segnalare la presenza di guasti all'utente manutentore.
+
+\paragraph{Utente manutentore:} L'utente manutentore si occupa della manutenzione del sistema fisico e svolge compiti vari, come sostituire lampadine o installare nuovi lampioni.
+
+\paragraph{Utente non autenticato:} L'utente non autenticato è quell'attore che non ha ancora compiuto il processo di autenticazione. Compiuta l'autenticazione, il sistema lo riconoscerà in uno dei casi precedenti oppure segnalerà il problema.
+
 \section{Vincoli progettuali}
 
 Il progetto pone alcuni vincoli preventivi su consegna, tecnologie e prestazioni.
