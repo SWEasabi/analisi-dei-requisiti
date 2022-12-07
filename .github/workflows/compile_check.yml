@@ -112,7 +112,7 @@ jobs:
         run: find ./analisireq -type f -name 'd_*.pdf' | while read f; do mv "$f" "${f/"/d_"/"/"}"; done
         
       - name: 🤐 Generate ZIP archive
-        run: zip -r analisireq.zip documentazione
+        run: zip -r analisireq.zip analisireq
      
       - name: 🎁 Release
         uses: softprops/action-gh-release@v1
