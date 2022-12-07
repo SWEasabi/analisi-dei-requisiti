@@ -1,12 +1,54 @@
+\chapter{Descrizione generale}
+
+\section{Obiettivi del prodotto}
+L'obiettivo del progetto è la realizzazione di un portale, che permette la visualizzazione, la gestione e la manutenzione di entità varie, tra cui lampioni, sensori, assieme ad una gestione del ticketing.
+Nello specifico, lo scopo finale del progetto è quello di fornire agli utenti la capacità di interagire con la piattaforma con limiti definiti per tipologia di utente, con il supporto di entità automatizzate.
+
 \section{Caratteristiche degli utenti}
 
-Il portale è rivolto ai soli utenti della piattaforma che si sono già registrati e quindi hanno già un ruolo dentro al sistema.
-Questi attori, suddivisi in \textit{Utente Gestore} ed \textit{Utente Manutentore}, hanno un ruolo specifico ed accedono a diverse funzionalità del sistema.
+Presupponiamo che più tipologie di utenti fisici interagiscano con il sistema, questo richiede un sistema di autenticazione e di autorizzazione.
+Ognuno dei nostri utenti che analizzeremo avrà specifici ruoli, bisogni e responsabilità.
+Il loro mezzo di interazione è un'interfaccia web\footnote{come richiesto dal capitolato}, tramite questa potranno accedere alle funzionalità di cui hanno bisogno.
 
-\paragraph{Utente gestore:} La realtà dell'utente gestore è quella di un utente, con il ruolo di impostazione dei valori assegnati alle varie entità disponibili nella piattaforma.
+Descriviamo ora le tipologie di utenti e i loro bisogni.
 
-\paragraph{Utente manutentore:} La realtà dell'utente manutentore è quella di un utente, con il ruolo di gestione e manutenzione dei componenti del sistema, con i seguenti compiti:
+\paragraph{Utente gestore:} L'utente gestore avrà bisogno di visualizzare i lampioni e il loro stato, di modificarne l'intensità luminosa e di settare vari parametri sugli stessi. Dovrà inoltre poter segnalare la presenza di guasti all'utente manutentore.
 
-Esiste inoltre, la figura di \textit{Utente Non Autenticato}, con l'unica scelta di potersi autenticare, per poi ricoprire il ruolo predefinito.
+\paragraph{Utente manutentore:} L'utente manutentore si occupa della manutenzione del sistema fisico e svolge compiti vari, come sostituire lampadine o installare nuovi lampioni.
 
-\paragraph{Utente non autenticato:} La realtà dell'utente non autenticato è quella di un utente che non ha ancora fatto il processo di autenticazione, quindi non ha ancora un ruolo definito. La sua unica scelta operativa è l'autenticazione.
+\paragraph{Utente non autenticato:} L'utente non autenticato è quell'attore che non ha ancora compiuto il processo di autenticazione. Compiuta l'autenticazione, il sistema lo riconoscerà in uno dei casi precedenti oppure segnalerà il problema.
+
+\section{Vincoli progettuali}
+
+Il progetto pone alcuni vincoli preventivi su consegna, tecnologie e prestazioni.
+
+\subsection{Vincoli di consegna}
+\begin{itemize}
+    \item Copertura di test $\geq 80\%$ correlata di report;
+    \item Documentazione di scelte implementative e progettuali;
+    \item Documentazione di problemi aperti ed eventuali soluzioni da esplorare.
+\end{itemize}
+
+\subsection{Vincoli tecnlogici}
+\begin{itemize}
+    \item Un'interfaccia utente esposta tramite un'applicazione web responsive che possa funzionare su dispositivi android o iOs muniti di browser web;
+    \item Utilizzo di sistemi embedded\footnote{Probabilmente \href{https://www.raspberrypi.com/products/raspberry-pi-zero-w/}{raspberry pi zero}} che non utilizzono tecnologie esterne al sistema, si richiede un'implementazione specifica controllo hardware dei lampioni;
+    \item Utilizzo di un'architettura a microservizi.
+\end{itemize}
+
+\subsubsection{Tecnologie consigliate}
+
+\begin{itemize}
+    \item Utilizzo di Java per il sistema di coordinamento generale.
+\end{itemize}
+
+\subsection{vincoli prestazionali}
+
+Il sistema suppone di utilizzare istanze da massimo 2 CPU e 1Gb di memoria.
+
+Si richiede poi, tenendo presente quanto sopra detto, un'analisi di carico massimo e di servizi cloud più adatti a supportare il sistema.
+
+\subsection{vincoli aggiuntivi e opzionali}
+\begin{itemize}
+    \item Cifratura di tutte le comunicazioni tra app e server per garantire validità di informazioni.
+\end{itemize}
