@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-09T19:24:04.583Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="zyov3-JHZ7l6FNeoqhpC" version="20.6.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-12-09T19:26:45.865Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="mjEQ4fxfyhs5buM93ihe" version="20.6.0" type="github" pages="5">
   <diagram id="ZQ3poqQVbt6KHrgqCMCS" name="Web_app_interface">
     <mxGraphModel dx="779" dy="-276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -253,13 +253,13 @@
         <mxCell id="ZI72nmJcdx-KkJI2LaC9-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=17;" edge="1" parent="1" source="s4T723TdLTKR_YwId5qL-2" target="ZI72nmJcdx-KkJI2LaC9-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-2" value="Apertura ticket manuale" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-2" value="UC18.1 - Apertura ticket manuale" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1105" y="1450" width="90" height="70" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="s4T723TdLTKR_YwId5qL-4" target="s4T723TdLTKR_YwId5qL-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-4" value="Rilevazione guasto" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-4" value="UC25 - Rilevazione guasto" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1370" y="1450" width="90" height="70" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-5" value="Sensore di stato" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" parent="1" vertex="1">
@@ -274,7 +274,7 @@
         <mxCell id="s4T723TdLTKR_YwId5qL-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="s4T723TdLTKR_YwId5qL-8" target="s4T723TdLTKR_YwId5qL-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-8" value="Aggiunta lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-8" value="UC22 - Aggiunta lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="1850" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-9" style="edgeStyle=none;rounded=0;jumpStyle=none;jumpSize=15;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="s4T723TdLTKR_YwId5qL-12" target="s4T723TdLTKR_YwId5qL-16" edge="1">
@@ -298,31 +298,31 @@
         <mxCell id="s4T723TdLTKR_YwId5qL-15" value="Utente gestore" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="910" y="1455" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-16" value="Chiusura Ticket" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-16" value="UC19 - Chiusura Ticket" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1105" y="1540" width="90" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-17" value="Inserimento sensore" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-17" value="UC23 - Inserimento sensore" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="1944" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-18" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;dashed=1;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;startSize=6;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" parent="1" source="s4T723TdLTKR_YwId5qL-17" target="s4T723TdLTKR_YwId5qL-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-19" value="Mostra lista aree" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-19" value="UC24 - Mostra lista aree" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1340" y="1944" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-20" value="Sostituzione lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-20" value="UC20 - Sostituzione lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="1630" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-21" value="Visualizzazione lista sensori" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-21" value="UC17 - Visualizzazione lista sensori" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1105" y="1339" width="90" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-22" value="Visualizzazione stato lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-22" value="UC26 - Visualizzazione stato lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1355" y="1339" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-23" style="edgeStyle=none;rounded=0;jumpStyle=none;jumpSize=15;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="s4T723TdLTKR_YwId5qL-24" target="s4T723TdLTKR_YwId5qL-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s4T723TdLTKR_YwId5qL-24" value="Rimozione lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s4T723TdLTKR_YwId5qL-24" value="UC21 - Rimozione lampione" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="1740" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="s4T723TdLTKR_YwId5qL-25" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;shadow=0;dashed=1;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;startSize=6;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" parent="1" source="s4T723TdLTKR_YwId5qL-21" target="s4T723TdLTKR_YwId5qL-22" edge="1">
@@ -331,7 +331,7 @@
             <mxPoint x="832.2834405812459" y="867.8543007265575" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZI72nmJcdx-KkJI2LaC9-1" value="Apertura Ticket&lt;span style=&quot;background-color: initial; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Mostra%20lista%20sensori%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221050%22%20y%3D%22195%22%20width%3D%2290%22%20height%3D%2270%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ZI72nmJcdx-KkJI2LaC9-1" value="UC18 - Apertura Ticket&lt;span style=&quot;background-color: initial; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Mostra%20lista%20sensori%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221050%22%20y%3D%22195%22%20width%3D%2290%22%20height%3D%2270%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1260" y="1550" width="90" height="70" as="geometry" />
         </mxCell>
       </root>
