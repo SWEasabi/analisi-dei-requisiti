@@ -20,12 +20,16 @@
 
 \begin{document}
 
-\input{\gassets global-assets/tex/header}
 
+\input{\gassets global-assets/tex/header}
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{Roman}
 \input{registro-modifiche}
 
 \tableofcontents
-
+\clearpage
+\pagenumbering{arabic}
 \input{contenuti/introduzione}
 \input{contenuti/descrizione-generale}
 \input{contenuti/user-stories}
