@@ -1,28 +1,17 @@
-\section{UC01 - Login}
+\subsection{UC01 - Autenticazione}
 
-\paragraph{Descrizione:}
-Come utente non loggato, voglio autenticarmi utilizzando le mie username e password, così da poter accedere al sistema.
+\paragraph{Attore primario} L'attore primario è l'utente non autenticato.
+\paragraph{Intenzione in contesto} L'attore primario desidera autenticarsi e raggiungere il ruolo di utente gestore o di utente manutentore.
 
-\paragraph{Attore principale:}
-Utente non loggato.
+\paragraph{Precondizioni} L'utente fa parte del gruppo di utenti che possono effettuare l'accesso al sistema, e non è riconosciuto da esso.
 
-\paragraph{Precondizioni:}
-L'utente fa parte del gruppo di utenti che possono effettuare l'accesso al sistema, e non è riconosciuto da esso.
+\paragraph{Post-condizioni} L'utente è riconosciuto dal sistema come utente gestore o utente installatore/manutentore.
 
-\paragraph{Post-condizioni:}
-Il sistema riconosce l'utente, che potrà essere:
-\begin{itemize}
-    \item utente gestore;
-    \item utente installatore/manutentore.
-\end{itemize}
-
-\paragraph{Scenario principale:}
+\paragraph{Scenario principale}
 \begin{enumerate}
     \item L'utente inserisce il suo username;
     \item L'utente inserisce la sua password.
 \end{enumerate}
 
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item L'utente fornisce delle credenziali errate e il sistema ritorna un errore.
-\end{enumerate}
+
+\paragraph{Estensioni} In caso di credenziali errate, utente non riconosciuto o non presente. Si rimanda al caso d'uso UC02.
