@@ -1,6 +1,7 @@
-\subsection{UC01 - Autenticazione}
+\section{UC01 - Autenticazione}
 
 \paragraph{Attore primario} L'attore primario è l'utente non autenticato.
+
 \paragraph{Intenzione in contesto} L'attore primario desidera autenticarsi e raggiungere il ruolo di utente gestore o di utente manutentore.
 
 \paragraph{Precondizioni} L'utente fa parte del gruppo di utenti che possono effettuare l'accesso al sistema, e non è riconosciuto da esso.
@@ -10,8 +11,18 @@
 \paragraph{Scenario principale}
 \begin{enumerate}
     \item L'utente inserisce il suo username;
-    \item L'utente inserisce la sua password.
+    \item l'utente inserisce la sua password;
+    \item l'utente viene impostato come gestore o come manutentore a seconda del suo tipo precedentemente assegnato; 
+    \item l'utente riceve una conferma dell'avvenuto accesso.
 \end{enumerate}
 
 
-\paragraph{Estensioni} In caso di credenziali errate, utente non riconosciuto o non presente. Si rimanda al caso d'uso UC02.
+\paragraph{Estensioni} In caso di credenziali errate, utente non riconosciuto o non presente. Si rimanda al caso d'uso \hyperref[uc:1.1]{UC01.1} .
+
+\subsection{UC01.1 - Visualizzazione del messaggio d'errore autenticazione}\label{uc:1.1}
+
+\paragraph{Attore primario} L'attore primario è l'utente non autenticato.
+
+\paragraph{Precondizioni} L'attore primario ha tentato di autenticarsi senza successo
+
+\paragraph{Post-condizioni} L'attore primario visualizza un messaggio recante un messaggio di non autenticazione.
