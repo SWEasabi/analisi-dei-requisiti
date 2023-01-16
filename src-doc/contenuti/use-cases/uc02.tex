@@ -3,7 +3,7 @@
 \paragraph{Attore primario} L'attore primario è l'utente gestore
 \paragraph{Intenzione in contesto} L'attore primario vuole vedere una lista delle varie aree di illuminazione ed il loro stato.
 
-\paragraph{Precondizioni} L'attore primario è riconosciuto ed autenticato dal sistema.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
 \paragraph{Postcondizioni} L'attore primario vdede la lista delle aree.
 
@@ -13,48 +13,3 @@
     \item L'utente richiede la visualizzazione della lista delle aree;
     \item il sistema fornisce la lista delle aree presenti nel sistema.
 \end{enumerate}
-
-
-
-
-
-
-\section{UC02 - Regolare luminosità di un singolo lampione}
-
-\paragraph{Descrizione:}
-Come utente gestore, voglio regolare la luminosità di un singolo lampione.
-
-\paragraph{Attore principale:}
-Utente gestore.
-
-\paragraph{Attori secondari:}
-\begin{itemize}
-    \item Lampadina.
-\end{itemize}
-
-\paragraph{Precondizioni:}
-L'utente ha effettuato il login, è stato riconosciuto come gestore e desidera regolare la luminosità di un singolo lampione.
-
-\paragraph{Post-condizioni:}
-La luminosità del lampione è stata regolata e il cambiamento viene riflesso nella luce emanata dalla lampadina.
-
-\paragraph{Scenario principale:}
-\begin{enumerate}
-    \item L'utente gestore entra nella pagina relativa al lampione;
-    \item l'utente gestore modifica la luminosità del lampione;
-    \item il sistema salva i cambiamenti;
-    \item la lampadina modifica la propria luminosità.
-\end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item L'utente gestore inserisce un valore non ammesso per la luminosità e il sistema ritorna un errore.
-\end{enumerate}
-
-
-\subsection{UC02 - Visualizzazione del messaggio d'errore autenticazione}
-
-\paragraph{Attore primario} L'attore primario è l'utente non autenticato.
-
-\paragraph{Intenzione in contesto} L'attore primario desidera vedere se le credenziali che ha inserito per autenticarsi hanno problemi di qualche sorta.
-

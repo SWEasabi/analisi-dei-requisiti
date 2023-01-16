@@ -1,0 +1,73 @@
+\section{UC02 - Regolare luminosità di un singolo lampione}
+
+\paragraph{Descrizione:}
+Come utente gestore, voglio regolare la luminosità di un singolo lampione.
+
+\paragraph{Attore principale:}
+Utente gestore.
+
+\paragraph{Attori secondari:}
+\begin{itemize}
+    \item Lampadina.
+\end{itemize}
+
+\paragraph{Precondizioni:}
+L'utente ha effettuato il login, è stato riconosciuto come gestore e desidera regolare la luminosità di un singolo lampione.
+
+\paragraph{Post-condizioni:}
+La luminosità del lampione è stata regolata e il cambiamento viene riflesso nella luce emanata dalla lampadina.
+
+\paragraph{Scenario principale:}
+\begin{enumerate}
+    \item L'utente gestore entra nella pagina relativa al lampione;
+    \item l'utente gestore modifica la luminosità del lampione;
+    \item il sistema salva i cambiamenti;
+    \item la lampadina modifica la propria luminosità.
+\end{enumerate}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente gestore inserisce un valore non ammesso per la luminosità e il sistema ritorna un errore.
+\end{enumerate}
+
+
+\subsection{UC02 - Visualizzazione del messaggio d'errore autenticazione}
+
+\paragraph{Attore primario} L'attore primario è l'utente non autenticato.
+
+\paragraph{Intenzione in contesto} L'attore primario desidera vedere se le credenziali che ha inserito per autenticarsi hanno problemi di qualche sorta.
+
+\section{UC03 - regolare luminosità molteplici lampioni}
+
+\paragraph{Descrizione:}
+Come utente gestore, voglio poter manipolare lo stato di molteplici lampioni.
+
+\paragraph{Attore principale:}
+
+Utente Gestore.
+
+\paragraph{Attori secondari:}
+\begin{itemize}
+    \item Lampadine.
+\end{itemize}
+
+\paragraph{Precondizioni:}
+L'utente deve essere loggato e deve essere riconsociuto come utente gestore,
+vuole modificare il livello di intensità luminosa di molteplici lampioni .
+
+
+\paragraph{Post-condizioni:}
+I lampioni sono manipolati rispecchiando l'intensità scelta.
+
+\paragraph{Scenario principale:}
+\begin{itemize}
+    \item utente gestore accede alla pagina relativa all'insieme di lampioni.
+    \item utente gestore manipola il valore relativo all'intensità luminosa.
+    \item il sistema salva i cambiamenti, in linea con l'intensita' scelta.
+    \item i lampioni modificano la loro intensita' luminosa in base ai parametri scelti.
+\end{itemize}
+
+\paragraph{Scenario alternativo:}
+\begin{enumerate}
+    \item L'utente gestore applica un valore non consentito per la luminosità , il sistema ritorna un errore.
+\end{enumerate}
