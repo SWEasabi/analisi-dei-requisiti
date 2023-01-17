@@ -1,0 +1,17 @@
+\section{UC11 - Rimozione area dal sistema}\label{uc:11}
+
+\paragraph{Intenzione in contesto} L'attore principale desidera rimuovere dal sistema una delle aree di gestione.
+
+\paragraph{Attore primario} L'attore primario è l'utente manutentore.
+
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema. Inoltre l'area di gestione è presente nel sistema.
+
+\paragraph{Postcondizioni} L'area è rimossa dal sistema e con lei tutti i lampioni ed i sensori presenti nell'area.
+
+\paragraph{Scenario principale} 
+\begin{enumerate}
+    \item L'attore primario dice al sistema l'area che desidera rimuovere;
+    \item il sistema rimuove tutti i sensori presenti nell'area, \hyperref[uc:12]{UC12};
+    \item il sistema rimuove tutti i lampioni presenti nell'area, \hyperref[uc:13]{UC13};
+    \item il sistema rimuove l'area.
+\end{enumerate}
