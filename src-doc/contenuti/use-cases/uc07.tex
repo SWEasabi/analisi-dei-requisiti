@@ -1,24 +1,18 @@
-\section{UC07 - Aggiunta sensore}
+\section{UC07 - Chiusura ticket}
 
-\paragraph{Descrizione:}
-Come utente installatore/manutentore, voglio aggiungere un sensore al sistema.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore.
+\paragraph{Attore secondario} L'attore secondario è il sistema di ticketing.
+\paragraph{Intenzione in contesto} L'attore primario ha risolto un guasto e vuole chiudere il ticket relativo per comunicare all'utente gestore che il sistema è tornato operativo.
 
-\paragraph{Attore principale:}
-Utente installatore/manutentore.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Precondizioni:}
-L'utente installatore/manutentore è loggato, e vuole aggiungere al sistema un nuovo sensore.
+\paragraph{Postcondizioni} Il ticket di guasto è stato chiuso.
 
-\paragraph{Post-condizioni:}
-Il sensore è stato aggiunto al sistema.
+\paragraph{Scenario principale}
 
-\paragraph{Scenario principale:}
 \begin{enumerate}
-    \item L'utente installatore/manutentore inserisce i dati relativi al nuovo sensore;
-    \item Il nuovo sensore viene aggiunto al sistema.
-\end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item L'utente installatore/manutentore inserisce valori non ammissibili e il sistema ritorna un errore.
+    \item L'attore primario comunica a quale ticket si sta riferendo;
+    \item il sistema di ticketing ritorna il ticket desiderato;
+    \item il sistema chiede all'attore primario se chiudere oppure no il ticket;
+    \item l'attore primario chiude il ticket.
 \end{enumerate}
