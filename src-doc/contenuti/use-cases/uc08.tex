@@ -1,28 +1,19 @@
-\section{UC08 - Aggiunta area gestione illuminazione}
+\section{UC08 - Aggiunta area al sistema}\label{uc:08}
+\paragraph{Intenzione in contesto} L'attore principale vuole aggiungere una nuova area di gestione dell'illuminazione.
 
-\paragraph{Descrizione:}
-Come installatore/manutentore, voglio poter aggiungere una nuova area gestione illuminazione raggruppando più lampioni.
 
-\paragraph{Attore principale:}
-Utente installatore/manutentore.
+\paragraph{Attore principale} L'attore principale è l'utente manutentore.
 
-\paragraph{Precondizioni:}
-L'utente è loggato come installatore/manutentore, e vuole aggiungere un area di gestione illuminazione raggruppando più lampioni.
 
-\paragraph{Post-condizioni:}
-Più lampioni sono stati raggruppati in una nuova area di gestione illuminazione, e possono ora essere controllati anche in gruppo da un utente gestore.
 
-\paragraph{Scenario principale:}
+\paragraph{Precondizioni}
+L'utente principale è autenticato ed autorizzato e vuole aggiungere un'area di gestione illuminazione al sistema.
+
+\paragraph{Post-condizioni}
+Una nuova area di gestione è stata creata.
+
+\paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'utente installatore/manutentore crea la nuova area di gestione illuminazione, inserendo i dati dell'area;
-    \item l'utente installatore/manutentore seleziona i vari lampioni da raggruppare;
-    \item l'utente installatore/manutentore conferma l'operazione di aggiunta dei lampioni.
+    \item L'attore principale crea la nuova area di gestione, inserendo i dati dell'area;
+    \item L'area di gestione viene creata nel sistema.
 \end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{itemize}
-    \item L'utente installatore/manutentore inserisce uno o più dati errati e il sistema mostra un errore.
-\end{itemize}
-% non è stata aggiunta tra gli scenari alternativi il blocco di creazione dell'area per mancanza di lampioni, perché si è pensato che 
-% l'utente installatore/manutentore possa prima creare l'area di gestione e in momenti futuri aggiungere i lampioni
-% => use case "modifica area gestione illuminazione"

@@ -1,0 +1,11 @@
+\section{UC22 - Impostazione area in lower\_state}\label{uc:22}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione in modalità \textit{upper\_state}
+\paragraph{Attore primario} L'attore primario è una time condition %non sono per nulla sicuro di questa cosa
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'area di illuminazione selezionata è impostata in modalità \textit{lower\_state}
+\paragraph{Scenario principale}
+\begin{enumerate}
+    \item L'attore primario comunica al sistema a quale area vorrebbe impostare il \textit{lower\_state};
+    \item l'attore primario imposta il \textit{lower\_state} all'area selezionata
+    \item il sistema comunica all'attore primario la conferma dell'impostazione in upper state dell'area di gestione.
+\end{enumerate}

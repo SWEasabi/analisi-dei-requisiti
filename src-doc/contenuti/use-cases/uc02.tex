@@ -1,31 +1,16 @@
-\section{UC02 - Regolare luminosità di un singolo lampione}
+\section{UC02 - Visualizzazione lista aree}\label{uc:02}
 
-\paragraph{Descrizione:}
-Come utente gestore, voglio regolare la luminosità di un singolo lampione.
+\paragraph{Intenzione in contesto} L'attore primario vuole vedere una lista delle varie aree di illuminazione ed il loro stato.
 
-\paragraph{Attore principale:}
-Utente gestore.
+\paragraph{Attore primario} L'attore primario è l'utente gestore
 
-\paragraph{Attori secondari:}
-\begin{itemize}
-    \item Lampadina.
-\end{itemize}
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Precondizioni:}
-L'utente ha effettuato il login, è stato riconosciuto come gestore e desidera regolare la luminosità di un singolo lampione.
+\paragraph{Postcondizioni} L'attore primario vede la lista delle aree.
 
-\paragraph{Post-condizioni:}
-La luminosità del lampione è stata regolata e il cambiamento viene riflesso nella luce emanata dalla lampadina.
+\paragraph{Scenario principale}
 
-\paragraph{Scenario principale:}
 \begin{enumerate}
-    \item L'utente gestore entra nella pagina relativa al lampione;
-    \item l'utente gestore modifica la luminosità del lampione;
-    \item il sistema salva i cambiamenti;
-    \item la lampadina modifica la propria luminosità.
-\end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item L'utente gestore inserisce un valore non ammesso per la luminosità e il sistema ritorna un errore.
+    \item L'utente richiede la visualizzazione della lista delle aree;
+    \item il sistema fornisce la lista delle aree presenti nel sistema.
 \end{enumerate}

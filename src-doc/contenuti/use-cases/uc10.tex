@@ -1,24 +1,18 @@
-\section{UC10 - Segnala presenza entità}
+\section{UC10 - Inserimento lampione a sistema}\label{uc:10}
 
-\paragraph{Descrizione:}
-Come sensore dati voglio segnalare la presenza di un'entità.
+\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un lampione che ha appena installato.
 
-\paragraph{Attore principale:}
-Sensore dati.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore
 
-\paragraph{Precondizioni:}
-Il sensore dati è funzionante ed è in grado di segnalare la presenza di un'entità.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Post-condizioni:}
-Il sensore dati ha individuato e segnalato al sistema la presenza di un'entità.
+\paragraph{Postcondizioni} Il nuovo lampione è inserito a sistema ed il sistema può gestirne l'illuminazione e tracciarne gli stati.
 
-\paragraph{Scenario principale:}
+\paragraph{Scenario principale}
+
 \begin{enumerate}
-    \item Il sensore individua la presenza di un'entità nelle vicinanze;
-    \item il sensore invia un segnale al sistema.
-\end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item Il sensore commette un'errore nell'invio della segnalazione al sistema.
+    \item L'attore principale ha installato fisicamente il lampione;
+    \item l'attore principale inserisce i dati del lampione a sistema;
+    \item l'attore principale configura il lampione nella giusta area di appartenenza;
+    \item Il sensore viene gestito dal sistema ed utilizzato.
 \end{enumerate}

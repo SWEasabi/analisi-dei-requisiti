@@ -1,24 +1,18 @@
-\section{UC09 - Invio valore luminosità}
+\section{UC09 - Inserimento sensore a sistema}\label{uc:09}
 
-\paragraph{Descrizione:}
-Come sensore dati, voglio inviare il valore dell'intensità luminosa al sistema.
+\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un sensore che ha appena installato.
 
-\paragraph{Attore principale:}
-Sensore dati.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore
 
-\paragraph{Precondizioni:}
-Il sensore dati è funzionante e può leggere il valore dell'intensità luminosa.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Post-condizioni:}
-Il sensore dati ha letto ed inviato al sistema il valore dell'intensità luminosa.
+\paragraph{Postcondizioni} Il sensore è inserito a sistema ed il sistema può gestirne le informazioni.
 
-\paragraph{Scenario principale:}
+\paragraph{Scenario principale}
+
 \begin{enumerate}
-    \item Il sensore legge il valore dell'intensità luminosa;
-    \item Il sensore invia il valore letto al sistema.
-\end{enumerate}
-
-\paragraph{Scenario alternativo:}
-\begin{enumerate}
-    \item Il sensore non può leggere e/o inviare il valore dell'intensità luminosa.
+    \item L'attore principale ha installato fisicamente il sensore;
+    \item l'attore principale inserisce i dati del sensore a sistema;
+    \item l'attore principale configura il sensore nella giusta area di appartenenza;
+    \item Il sensore viene gestito dal sistema ed utilizzato.
 \end{enumerate}
