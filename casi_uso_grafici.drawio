@@ -318,19 +318,58 @@
                 <mxCell id="Dst_p0DBhGbKxDhVHWB_-62" value="UC1 - Autenticazione" style="ellipse;whiteSpace=wrap;html=1;" parent="Oyl4MPh-AGhWw54U4Yij-1" vertex="1">
                     <mxGeometry x="1045" y="1304" width="165.5" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="0" value="UC20 - Visualizzazione lista&amp;nbsp;ticket di guasto" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                <mxCell id="0" value="UC20 - Visualizzazione lista&amp;nbsp;ticket di guasto" style="ellipse;whiteSpace=wrap;html=1;" parent="Oyl4MPh-AGhWw54U4Yij-1" vertex="1">
                     <mxGeometry x="1066.75" y="1740" width="161" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Oyl4MPh-AGhWw54U4Yij-1" source="_OyQbxIsrZ8jYSqlQWz1-1" target="0">
+                <mxCell id="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Oyl4MPh-AGhWw54U4Yij-1" source="_OyQbxIsrZ8jYSqlQWz1-1" target="0" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1238.25" y="1810" as="sourcePoint"/>
                         <mxPoint x="1454.5" y="1763.2432432432433" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Oyl4MPh-AGhWw54U4Yij-1" source="05nJeD1UHd1gZ71pS0e2-4" target="0">
+                <mxCell id="2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Oyl4MPh-AGhWw54U4Yij-1" source="05nJeD1UHd1gZ71pS0e2-4" target="0" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1248.25" y="1820" as="sourcePoint"/>
                         <mxPoint x="1464.5" y="1773.2432432432433" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="UC20" style="shape=umlFrame;whiteSpace=wrap;html=1;width=200;height=30;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="1613.5" y="1835" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Utente gestore" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="1528.5" y="1860" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="UC20.1 - Visualizzazione ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="1647" y="1875" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;rounded=0;jumpStyle=none;jumpSize=15;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="Oyl4MPh-AGhWw54U4Yij-1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1453.5" y="2023.4857603788219" as="sourcePoint"/>
+                        <mxPoint x="1629.278806800694" y="2005.7410114574195" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="UC20.1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=200;height=30;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="2105" y="1830" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Utente gestore" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="2020" y="1880" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="UC20.1.1 - Visualizzazione titolo ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="2140" y="1875" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;rounded=0;jumpStyle=none;jumpSize=15;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="Oyl4MPh-AGhWw54U4Yij-1" source="8" target="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1945" y="2018.4857603788219" as="sourcePoint"/>
+                        <mxPoint x="2120.778806800694" y="2000.7410114574195" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="UC20.1.2 - Visualizzazione descrizione ticket" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Oyl4MPh-AGhWw54U4Yij-1">
+                    <mxGeometry x="2140" y="1920" width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;rounded=0;jumpStyle=none;jumpSize=15;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Oyl4MPh-AGhWw54U4Yij-1" source="8" target="11">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2060" y="1895.3488372093022" as="sourcePoint"/>
+                        <mxPoint x="2151.5655938460704" y="1897.4782696243274" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
