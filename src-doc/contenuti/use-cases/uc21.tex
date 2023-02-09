@@ -1,11 +1,11 @@
-\section{UC21 - Impostazione area in upper\_state}\label{uc:21}
-\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione in modalità \textit{upper\_state}
-\paragraph{Attore primario} L'attore primario è il sensore di presenza
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'area di illuminazione selezionata è impostata in modalità \textit{upper\_state}
+\section{UC21 - Impostazione area di illuminazione in modalità manuale}\label{uc:21}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione nella sua modalità manuale.
+\paragraph{Attore primario} L'attore primario è l'utente gestore.
+\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} La specifica area target è impostata in modalità manuale e non reagirà alle informazioni rilevanti dai sensori.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario comunica al sistema a quale area vorrebbe impostare l'\textit{upper\_state};
-    \item l'attore primario imposta l'area in \textit{upper\_state};
-    \item il sistema comunica all'attore primario la conferma dell'impostazione in upper state dell'area di gestione.
+    \item L'attore primario indica al sistema quale area decide impostare in modalità manuale;
+    \item l'attore primario imposta in modalità manuale l'area;
+    \item l'area è impostata in modalità manuale.
 \end{enumerate}

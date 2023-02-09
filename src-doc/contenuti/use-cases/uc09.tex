@@ -1,18 +1,19 @@
-\section{UC09 - Inserimento sensore a sistema}\label{uc:09}
+\section{UC09 - Chiusura ticket}\label{uc:09}
 
-\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un sensore che ha appena installato.
+\paragraph{Intenzione in contesto} L'attore primario ha risolto un guasto e vuole chiudere il ticket relativo per comunicare all'utente gestore che il sistema è tornato operativo.
 
-\paragraph{Attore primario} L'attore primario è l'utente manutentore
+\paragraph{Attore primario} L'attore primario è l'utente manutentore.
+\paragraph{Attore secondario} L'attore secondario è il sistema di ticketing.
 
 \paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Postcondizioni} Il sensore è inserito a sistema ed il sistema può gestirne le informazioni.
+\paragraph{Postcondizioni} Il ticket di guasto è stato chiuso.
 
 \paragraph{Scenario principale}
 
 \begin{enumerate}
-    \item L'attore principale ha installato fisicamente il sensore;
-    \item l'attore principale inserisce i dati del sensore a sistema;
-    \item l'attore principale configura il sensore nella giusta area di appartenenza;
-    \item Il sensore viene gestito dal sistema ed utilizzato.
+    \item L'attore primario comunica a quale ticket si sta riferendo;
+    \item il sistema di ticketing ritorna il ticket desiderato;
+    \item il sistema chiede all'attore primario se chiudere oppure no il ticket;
+    \item l'attore primario chiude il ticket.
 \end{enumerate}

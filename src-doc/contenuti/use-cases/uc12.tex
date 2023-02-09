@@ -1,15 +1,18 @@
-\section{UC12 - Rimozione sensore dal sistema}\label{uc:12}
+\section{UC12 - Inserimento lampione a sistema}\label{uc:12}
 
+\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un lampione che ha appena installato.
 
-\paragraph{Intenzione in contesto}
-L'attore primario desidera rimuovere un sensore dal sistema.
-\paragraph{Attore primario}L'attore primario è l'utente manutentore.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore
 
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema. Inoltre, il sensore che l'attore primario vuole rimuovere è presente.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Post-condizioni} Il sensore è rimosso dal sistema.
+\paragraph{Postcondizioni} Il nuovo lampione è inserito a sistema ed il sistema può gestirne le l'illuminazione e tracciarne gli stati.
+
 \paragraph{Scenario principale}
+
 \begin{enumerate}
-    \item L'attore primario seleziona quale sensore rimuovere dal sistema;
-    \item il sensore viene rimosso dal sistema.
+    \item L'attore principale ha installato fisicamente il lampione;
+    \item l'attore principale inserisce i dati del lampione a sistema;
+    \item l'attore principale configura il lampione nella giusta area di appartenenza;
+    \item Il sensore viene gestito dal sistema ed utilizzato.
 \end{enumerate}

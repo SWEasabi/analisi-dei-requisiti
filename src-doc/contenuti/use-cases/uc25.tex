@@ -1,15 +1,11 @@
-\section{UC25 - Rimozione lampione da area}\label{uc:25}
-\paragraph{Intenzione in contesto} L'attore primario desidera rimuovere un lampione dall'area di illuminazione all'interno del sistema.
-\paragraph{Attore primario} L'attore primario è l'utente manutentore.
-\paragraph{Precondizioni}  
-\begin{enumerate}
-    \item L'attore primario è autenticato ed autorizzato dal sistema;
-    \item l'area di illuminazione contiene almeno un lampione.
-\end{enumerate}
-\paragraph{Post-condizioni} Il lampione è stato rimosso dall'area di illuminazione.
+\section{UC25 - Impostazione area in upper\_state}\label{uc:25}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione in modalità \textit{upper\_state}
+\paragraph{Attore primario} L'attore primario è il sensore di presenza
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'area di illuminazione selezionata è impostata in modalità \textit{upper\_state}
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario dice al sistema da quale area desidera rimuovere un lampione;
-    \item l'attore primario specifica il lampione da rimuovere dall'area di illuminazione;
-    \item il lampione è stato rimosso dall'area di illuminazione.
+    \item L'attore primario comunica al sistema a quale area vorrebbe impostare l'\textit{upper\_state};
+    \item l'attore primario imposta l'area in \textit{upper\_state};
+    \item il sistema comunica all'attore primario la conferma dell'impostazione in upper state dell'area di gestione.
 \end{enumerate}

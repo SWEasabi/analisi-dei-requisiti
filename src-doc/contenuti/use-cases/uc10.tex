@@ -1,18 +1,16 @@
-\section{UC10 - Inserimento lampione a sistema}\label{uc:10}
+\section{UC10 - Aggiunta area al sistema}\label{uc:10}
+\paragraph{Intenzione in contesto} L'attore principale vuole aggiungere una nuova area di gestione dell'illuminazione.
 
-\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un lampione che ha appena installato.
+\paragraph{Attore principale} L'attore principale è l'utente manutentore.
 
-\paragraph{Attore primario} L'attore primario è l'utente manutentore
+\paragraph{Precondizioni}
+L'utente principale è autenticato ed autorizzato e vuole aggiungere un area di gestione illuminazione al sistema.
 
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
-
-\paragraph{Postcondizioni} Il nuovo lampione è inserito a sistema ed il sistema può gestirne le l'illuminazione e tracciarne gli stati.
+\paragraph{Post-condizioni}
+Una nuova area di gestione è stata creata.
 
 \paragraph{Scenario principale}
-
 \begin{enumerate}
-    \item L'attore principale ha installato fisicamente il lampione;
-    \item l'attore principale inserisce i dati del lampione a sistema;
-    \item l'attore principale configura il lampione nella giusta area di appartenenza;
-    \item Il sensore viene gestito dal sistema ed utilizzato.
+    \item L'attore principale crea la nuova area di gestione, inserendo i dati dell'area;
+    \item L'area di gestione viene creata nel sistema.
 \end{enumerate}

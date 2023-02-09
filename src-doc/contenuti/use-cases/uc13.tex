@@ -1,15 +1,17 @@
-\section{UC13 - Rimozione lampione dal sistema}\label{uc:13}
+\section{UC13 - Rimozione area dal sistema}\label{uc:13}
 
+\paragraph{Intenzione in contesto} L'attore principale desidera rimuovere dal sistema una delle aree di gestione.
 
-\paragraph{Intenzione in contesto}
-L'attore primario desidera rimuovere un lampione dal sistema.
-\paragraph{Attore primario}L'attore primario è l'utente manutentore.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore.
 
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema. Inoltre, il lampione che l'attore primario vuole rimuovere è presente.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema. Inoltre l'area di gestione è presente nel sistema.
 
-\paragraph{Post-condizioni} Il lampione è rimosso dal sistema.
-\paragraph{Scenario principale}
+\paragraph{Postcondizioni} L'area è rimossa dal sistema e con lei tutti i lampioni ed i sensori presenti nell'area.
+
+\paragraph{Scenario principale} 
 \begin{enumerate}
-    \item L'attore primario seleziona quale lampione rimuovere dal sistema;
-    \item il lampione viene rimosso dal sistema.
+    \item L'attore primario dice al sistema l'area che desidera rimuovere;
+    \item il sistema rimuove tutti i sensori presenti nell'area, \hyperref[uc:14]{UC14};
+    \item il sistema rimuove tutti i lampioni presenti nell'area, \hyperref[uc:15]{UC15};
+    \item il sistema rimuove l'area.
 \end{enumerate}

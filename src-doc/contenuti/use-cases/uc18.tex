@@ -1,52 +1,15 @@
-\section{UC18 - Visualizzazione lista ticket di guasto}\label{uc:18}
-\paragraph{Intenzione in contesto} L'attore primario desidera la lista dei ticket di guasto presenti nel sistema.
-
-\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza la lista dei ticket di guasto.
-\paragraph{Scenario principale}
+\section{UC18 - Rimozione lampione da area}\label{uc:18}
+\paragraph{Intenzione in contesto} L'attore primario desidera rimuovere un lampione dall'area di illuminazione all'interno del sistema.
+\paragraph{Attore primario} L'attore primario è l'utente manutentore.
+\paragraph{Precondizioni}  
 \begin{enumerate}
-    \item L'attore primario richiede al sistema la lista dei ticket di guasto;
-    \item la lista è stata visualizzata.
+    \item L'attore primario è autenticato ed autorizzato dal sistema;
+    \item l'area di illuminazione contiene almeno un lampione.
 \end{enumerate}
-
-\begin{figure}[h]
-    \includegraphics[width=\textwidth]{contenuti/img/casi_uso_grafici-uc18.png}
-    \caption{UC18 in dettaglio}
-    \label{fig:uc18}
-\end{figure}
-
-\subsection{UC18.1 - Visualizzazione ticket in lista}\label{uc:18.1}
-\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare il singolo ticket parte della lista.
-\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
-\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza il singolo ticket.
+\paragraph{Post-condizioni} Il lampione è stato rimosso dall'area di illuminazione.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario richiede al sistema di visualizzare il singolo ticket in lista;
-    \item il ticket è stato visualizzato.
-\end{enumerate}
-
-\subsection{UC18.1.1 - Visualizzazione titolo ticket}\label{uc:18.1.1}
-
-\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare il titolo del ticket;
-\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
-\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza il titolo del ticket.
-\paragraph{Scenario principale}
-\begin{enumerate}
-    \item L'attore primario richiede al sistema di visualizzare il titolo del ticket;
-    \item il titolo del ticket è stato visualizzato.
-\end{enumerate}
-
-\subsection{UC18.1.2 - Visualizzazione stato ticket}\label{uc:18.1.2}
-
-\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare lo stato del ticket;
-\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
-\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza lo stato del ticket.
-\paragraph{Scenario principale}
-\begin{enumerate}
-    \item L'attore primario richiede al sistema di visualizzare lo stato del ticket;
-    \item lo stato del ticket è stato visualizzato.
+    \item L'attore primario dice al sistema da quale area desidera rimuovere un lampione;
+    \item l'attore primario specifica il lampione da rimuovere dall'area di illuminazione;
+    \item il lampione è stato rimosso dall'area di illuminazione.
 \end{enumerate}

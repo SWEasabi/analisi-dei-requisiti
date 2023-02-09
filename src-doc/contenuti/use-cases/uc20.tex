@@ -1,13 +1,15 @@
-\section{UC20 - Visualizzazione dettaglio ticket}\label{uc:20}
-\paragraph{Intenzione in contesto} L'attore primario desidera visualizzare la pagina di dettaglio del ticket.
+\section{UC20 - Impostazioni livelli per automatismo luminosità area}\label{uc:20}
+\paragraph{Intenzione in contesto} L'attore primario desidera modificare uno dei due livelli che impostano l'automatismo dell'illuminazione in un'area. 
 
-\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
+\paragraph{Attore primario} L'attore primario è l'utente gestore.
 \paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza la pagina di dettaglio dei ticket di guasto.
+\paragraph{Post-condizioni} I livelli a cui l'area deve portare l'intensità luminosa sono stati impostati.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario richiede al sistema la pagina di dettaglio del ticket di guasto;
-    \item la pagina di dettaglio del ticket viene visualizzata, in particolare le informazioni relative a \hyperref[uc:20.1]{UC20.1} e \hyperref[uc:20.2]{UC20.2};;
+    \item L'attore primario sceglie a quale area apportare modifiche;
+    \item l'attore imposta le modifiche relative ad \hyperref[uc:20.1]{UC20.1};
+    \item l'attore imposta le modifiche relative ad \hyperref[uc:20.2]{UC20.2};
+    \item le modifiche entrano in azione nel sistema. 
 \end{enumerate}
 
 \begin{figure}[h]
@@ -16,27 +18,27 @@
     \label{fig:uc20}
 \end{figure}
 
-
-\subsection{UC20.1 - Visualizzazione titolo ticket}\label{uc:20.1}
-
-\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare il titolo del ticket;
-\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
+\subsection{UC20.1 - Impostazione livello superiore per automatismo luminosità area}\label{uc:20.1}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare il livello a cui deve essere impostata l'illuminazione dell'area specifica in caso di movimento rilevato dai sensori del sistema.
+\paragraph{Attore primario} L'attore primario è l'utente gestore.
 \paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza il titolo del ticket.
+\paragraph{Post-condizioni} Il livello superiore dell'illuminazione nell'area è impostato.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario richiede al sistema di visualizzare il titolo del ticket;
-    \item il titolo del ticket è stato visualizzato.
+    \item L'attore primario dice al sistema a quale area desidera modificare il parametro;
+    \item l'attore primario imposta il livello a cui dovrà trovarsi l'illuminazione in caso di rilevato movimento;
+    \item il parametro viene impostato nel sistema.
 \end{enumerate}
 
-\subsection{UC20.2 - Visualizzazione descrizione ticket}\label{uc:20.2}
+\subsection{UC20.2 - Impostazione livello inferiore per automatismo luminosità area}\label{uc:20.2}
 
-\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare la descrizione testuale del ticket;
-\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare il livello a cui deve essere impostata l'illuminazione dell'area specifica dopo che avviene un timeout dall'ultimo movimento rilevato dal sistema.
+\paragraph{Attore primario} L'attore primario è l'utente gestore.
 \paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'attore primario visualizza la descrizione del ticket.
+\paragraph{Post-condizioni} Il livello inferiore automatico dell'illuminazione nell'area è impostato.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario richiede al sistema di visualizzare la descrizione del ticket;
-    \item la descrizione del ticket è stata visualizzata.
+    \item L'attore primario dice al sistema a quale area desidera modificare il parametro;
+    \item l'attore primario imposta il livello a cui dovrà tornare l'area dopo che un determinato lasso di tempo è passato dall'ultimo movimento rilevato nell'area;
+    \item il parametro viene impostato nel sistema.
 \end{enumerate}

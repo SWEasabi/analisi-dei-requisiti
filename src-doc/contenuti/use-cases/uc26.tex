@@ -1,14 +1,11 @@
-\section{UC26 - Inserimento dato dell'intensità luminosa}\label{uc:26}
-\paragraph{Intenzione in contesto} L'attore primario desidera inserire il dato dell'intensità luminosa di un lampione nel sistema.
-\paragraph{Attore primario} L'attore primario è la lampadina.
-\paragraph{Precondizioni}  
-\begin{enumerate}
-    \item L'attore primario ha precedentemente letto il dato dell'intensità luminosa.
-\end{enumerate}
-\paragraph{Post-condizioni} L'attore primario ha inserito il dato dell'intensità luminosa nel sistema.
-\paragraph{Trigger} Questo UC viene attivato a intervalli di tempo fissati e costanti.
+\section{UC26 - Impostazione area in lower\_state}\label{uc:26}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione in modalità \textit{upper\_state}
+\paragraph{Attore primario} L'attore primario è una time condition %non sono per nulla sicuro di questa cosa
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'area di illuminazione selezionata è impostata in modalità \textit{lower\_state}
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario ha il valore dell'intensità luminosa da inserire;
-    \item L'attore primario ha inserito nel sistema il valore dell'intensità luminosa letto.
+    \item L'attore primario comunica al sistema a quale area vorrebbe impostare il \textit{lower\_state};
+    \item l'attore primario imposta il \textit{lower\_state} all'area selezionata
+    \item il sistema comunica all'attore primario la conferma dell'impostazione in upper state dell'area di gestione.
 \end{enumerate}
