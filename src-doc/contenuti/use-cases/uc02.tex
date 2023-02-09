@@ -21,15 +21,39 @@
     \label{fig:uc02}
 \end{figure}
 
-\subsection{UC02.1 Visualizzazione lampioni in area}
+\subsection{UC02.1 Visualizzazione area in lista}
 \paragraph{Intenzione in contesto} L'attore primario vuole visualizzare una singola area.
 
 \paragraph{Attore primario} L'attore primario è l'utente gestore.
 \paragraph{Precondizioni}L'attore primario è riconosciuto ed autorizzato dal sistema.
-\paragraph{Postcondizioni} L'attore primario visualizza la singola area desiderata.
+\paragraph{Postcondizioni} L'attore primario visualizza la singola area desiderata, in particolare le informazioni relative a \hyperref[uc:02.1.1]{UC02.1.1} e \hyperref[uc:02.1.2]{UC02.1.2}..
 
 \paragraph{Scenario principale}
 \begin{enumerate}
     \item L'utente richiede di visualizzare una singola area;
     \item l'utente visualizza la singola area desiderata.
+\end{enumerate}
+
+\subsection{UC02.1.1 - Visualizzazione nome area}\label{uc:02.1.1}
+
+\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare il nome dell'area;
+\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
+\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'attore primario visualizza il nome dell'area.
+\paragraph{Scenario principale}
+\begin{enumerate}
+    \item L'attore primario richiede al sistema di visualizzare il nome dell'area;
+    \item il nome dell'area è stato visualizzato.
+\end{enumerate}
+
+\subsection{UC02.1.2 - Visualizzazione stato area}\label{uc:02.1.2}
+
+\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare lo stato dell'area;
+\paragraph{Attore primario} L'attore primario è o l'utente gestore manutentore.
+\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'attore primario visualizza lo stato dell'area.
+\paragraph{Scenario principale}
+\begin{enumerate}
+    \item L'attore primario richiede al sistema di visualizzare lo stato dell'area;
+    \item lo stato dell'area è stato visualizzato.
 \end{enumerate}
