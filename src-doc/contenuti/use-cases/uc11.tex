@@ -1,17 +1,18 @@
-\section{UC11 - Rimozione area dal sistema}\label{uc:11}
+\section{UC11 - Inserimento sensore a sistema}\label{uc:11}
 
-\paragraph{Intenzione in contesto} L'attore principale desidera rimuovere dal sistema una delle aree di gestione.
+\paragraph{Intenzione in contesto} L'attore primario vuole aggiungere al sistema un sensore che ha appena installato.
 
 \paragraph{Attore primario} L'attore primario è l'utente manutentore.
 
-\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema. Inoltre l'area di gestione è presente nel sistema.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
 
-\paragraph{Postcondizioni} L'area è rimossa dal sistema e con lei tutti i lampioni ed i sensori presenti nell'area.
+\paragraph{Postcondizioni} Il sensore è inserito a sistema ed il sistema può gestirne le informazioni.
 
-\paragraph{Scenario principale} 
+\paragraph{Scenario principale}
+
 \begin{enumerate}
-    \item L'attore primario dice al sistema l'area che desidera rimuovere;
-    \item il sistema rimuove tutti i sensori presenti nell'area, \hyperref[uc:12]{UC12};
-    \item il sistema rimuove tutti i lampioni presenti nell'area, \hyperref[uc:13]{UC13};
-    \item il sistema rimuove l'area.
+    \item L'attore principale ha installato fisicamente il sensore;
+    \item l'attore principale inserisce i dati del sensore a sistema;
+    \item l'attore principale configura il sensore nella giusta area di appartenenza;
+    \item il sensore viene gestito dal sistema ed utilizzato.
 \end{enumerate}

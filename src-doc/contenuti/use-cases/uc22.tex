@@ -1,11 +1,11 @@
-\section{UC22 - Impostazione area in lower\_state}\label{uc:22}
-\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione in modalità \textit{upper\_state}
-\paragraph{Attore primario} L'attore primario è una time condition %non sono per nulla sicuro di questa cosa
+\section{UC22 - Impostazione area di illuminazione in modalità automatica}\label{uc:22}
+\paragraph{Intenzione in contesto} L'attore primario vuole impostare un'area di illuminazione nella sua modalità automatica.
+\paragraph{Attore primario} L'attore primario è l'utente gestore.
 \paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
-\paragraph{Post-condizioni} L'area di illuminazione selezionata è impostata in modalità \textit{lower\_state}
+\paragraph{Post-condizioni} La specifica area target è impostata in modalità automatica e reagirà alle informazioni rilevanti dai sensori.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore primario comunica al sistema a quale area vorrebbe impostare il \textit{lower\_state};
-    \item l'attore primario imposta il \textit{lower\_state} all'area selezionata
-    \item il sistema comunica all'attore primario la conferma dell'impostazione in upper state dell'area di gestione.
+    \item L'attore primario indica al sistema quale area decide impostare in modalità automatica;
+    \item l'attore primario imposta in modalità automatica l'area;
+    \item l'area è impostata in modalità automatica.
 \end{enumerate}

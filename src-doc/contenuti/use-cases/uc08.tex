@@ -1,19 +1,42 @@
-\section{UC08 - Aggiunta area al sistema}\label{uc:08}
-\paragraph{Intenzione in contesto} L'attore principale vuole aggiungere una nuova area di gestione dell'illuminazione.
+\section{UC08 - Visualizzazione dettaglio ticket}\label{uc:08}
+\paragraph{Intenzione in contesto} L'attore primario desidera visualizzare la pagina di dettaglio del ticket.
 
-
-\paragraph{Attore principale} L'attore principale è l'utente manutentore.
-
-
-
-\paragraph{Precondizioni}
-L'utente principale è autenticato ed autorizzato e vuole aggiungere un'area di gestione illuminazione al sistema.
-
-\paragraph{Post-condizioni}
-Una nuova area di gestione è stata creata.
-
+\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'attore primario visualizza la pagina di dettaglio dei ticket di guasto.
 \paragraph{Scenario principale}
 \begin{enumerate}
-    \item L'attore principale crea la nuova area di gestione, inserendo i dati dell'area;
-    \item L'area di gestione viene creata nel sistema.
+    \item L'attore primario richiede al sistema la pagina di dettaglio del ticket di guasto;
+    \item la pagina di dettaglio del ticket viene visualizzata, in particolare le informazioni relative a \hyperref[uc:08.1]{UC08.1} e \hyperref[uc:08.2]{UC08.2}.
+\end{enumerate}
+
+\begin{figure}[h]
+    \includegraphics[width=\textwidth]{contenuti/img/casi_uso_grafici-uc08.png}
+    \caption{UC08 in dettaglio}
+    \label{fig:uc08}
+\end{figure}
+
+
+\subsection{UC08.1 - Visualizzazione titolo ticket}\label{uc:08.1}
+
+\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare il titolo del ticket;
+\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
+\paragraph{Precondizioni} L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'attore primario visualizza il titolo del ticket.
+\paragraph{Scenario principale}
+\begin{enumerate}
+    \item L'attore primario richiede al sistema di visualizzare il titolo del ticket;
+    \item il titolo del ticket è stato visualizzato.
+\end{enumerate}
+
+\subsection{UC08.2 - Visualizzazione descrizione ticket}\label{uc:08.2}
+
+\paragraph{Intenzione in contesto} L'attore primario vuole visualizzare la descrizione testuale del ticket.
+\paragraph{Attore primario} L'attore primario è o l'utente gestore o l'utente manutentore.
+\paragraph{Precondizioni}  L'attore primario è autenticato ed autorizzato dal sistema.
+\paragraph{Post-condizioni} L'attore primario visualizza la descrizione del ticket.
+\paragraph{Scenario principale}
+\begin{enumerate}
+    \item L'attore primario richiede al sistema di visualizzare la descrizione del ticket;
+    \item la descrizione del ticket è stata visualizzata.
 \end{enumerate}
