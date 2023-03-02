@@ -13,19 +13,39 @@ Di seguito sono riportati i requisiti che il gruppo \textit{SWEasabi} ha classif
         \textbf{Codice} & \textbf{Classificazione} & \textbf{Descrizione} & \textbf{Fonti} \\
         \hline
         RF\_01 & Obbligatorio & L'utente deve visualizzare un messaggio d'errore esplicativo in caso di errore di autenticazione & UC01 \\
+
         \hline
-        RF\_02 & Desiderabile & Ogni modifica a stato di lampadina, lampione o area dev'essere visibile in tempo reale nell'interfaccia utente & VIN\_20230111\\
+        RF\_02 & Obbligatorio &Ogni cambiamento di stato di una lampadina deve apparire automaticamente nell'interfaccia utente & VIN\_20230111\\
+
         \hline
-        RF\_03 & Obbligatorio & Il sistema deve rilevare automaticamente un guasto ad un impianto di illuminazione & Capitolato, UC11 \\
+        RF\_03 & Obbligatorio & Deve essere possibile aggiungere nuovi sensori di luminosità o presenza a sistema & Capitolato, UC11 \\
+
         \hline
-        RF\_04 & Obbligatorio & Deve essere possibile segnalare manualmente i guasti agli impianti di illuminazione & Capitolato \\
+        RF\_04 & Obbligatorio & Il sistema deve rilevare automaticamente un guasto ad un impianto di illuminazione & Capitolato\\
+        
+        \hline
+        RF\_05 & Obbligatorio & Deve essere possibile segnalare manualmente i guasti agli impianti di illuminazione & Capitolato, UC06 \\
+
+        \hline
+        RF\_06 & Obbligatorio & L'intensità luminosa di un'area di illuminazione deve poter essere gestita manualmente da un utente & Capitolato\\
+
+        \hline
+        RF\_07 & Obbligatorio & Il sistema deve reagire alla presenza di individui in un area & Capitolato, UC25, UC26, US3.7 \\
+        %TODO: Da definire in maniera più precisa
+
+        \hline
+        RF\_08 & Obbligatorio & L'utente deve effettuare l'accesso per poter utilizzare le funzionalità del sistema & Capitolato, UC01\\
+
+        \hline
+        RF\_09 & Obbligatorio & L'utente deve poter inserire la locazione geografica dell'impianto di illuminazione & Capitolato, UC10\\
+
+
         \hline
     \end{xltabular}
 \end{center}
 
 
 \section{Requisiti di qualità}
-
 \begin{center}
     \begin{xltabular}{\linewidth}{|l|l|X|l|}
     \hline
