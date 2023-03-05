@@ -423,7 +423,7 @@
                         <mxPoint x="1090.5" y="1562.5" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="29" value="Lampadina" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" parent="Oyl4MPh-AGhWw54U4Yij-1" vertex="1">
+                <mxCell id="29" value="Lampione" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;gradientColor=none;" parent="Oyl4MPh-AGhWw54U4Yij-1" vertex="1">
                     <mxGeometry x="909.5" y="2278" width="30" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="30" value="UC19 - Inserimento dato &lt;br&gt;dell'intensità luminosa" style="ellipse;whiteSpace=wrap;html=1;" parent="Oyl4MPh-AGhWw54U4Yij-1" vertex="1">
