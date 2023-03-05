@@ -1,0 +1,148 @@
+\chapter{Requsiti}
+
+\section{Introduzione}
+Di seguito sono riportati i requisiti che il gruppo \textit{SWEasabi} ha classificato utilizzando la metodologia definita nelle \textit{Norme di Progetto}.
+
+\section{Requisiti funzionali}
+
+\begin{center}
+    \begin{xltabular}{\linewidth}{|l|l|X|l|}
+        \hline
+        %Colora la riga di un grigio chiaro più chiaro
+        \rowcolor[gray]{0.9}
+        \textbf{Codice} & \textbf{Classificazione} & \textbf{Descrizione} & \textbf{Fonti} \\
+        \hline
+        RF\_01 & Obbligatorio & Il sistema deve mostrare un messaggio d'errore esplicativo all'utente in caso di errore di autenticazione & UC01.1 \\
+
+        \hline
+        RF\_02 & Desiderabile &Ogni cambiamento di stato di una lampadina deve apparire automaticamente nell'interfaccia utente & VIN\_20230111\\
+
+        \hline
+        RF\_03 & Obbligatorio & Deve essere possibile aggiungere nuovi sensori di luminosità o presenza a sistema & Capitolato, UC11 \\
+
+        \hline
+        RF\_04 & Obbligatorio & L'intensità luminosa di un'area di illuminazione deve poter essere gestita manualmente da un utente & Capitolato\\
+
+        \hline
+        RF\_05 & Obbligatorio & Il sistema deve accendere un'area per un lasso di tempo pre-configurato quando rileva persone in prossimità della stessa & Capitolato, UC25, US3.7 \\
+
+        \hline
+        RF\_06 & Obbligatorio & Il sistema deve riportare l'intensità luminosa dell'area al valore di default una volta passato il tempo impostato & Capitolato, UC26 \\
+
+        \hline
+        RF\_07 & Obbligatorio & L'utente deve effettuare l'accesso per poter utilizzare le funzionalità del sistema & Capitolato, UC01\\
+
+        \hline
+        RF\_8 & Obbligatorio & L'utente deve poter inserire la locazione geografica del sensore nel sistema & Capitolato, UC10\\
+
+        \hline
+        RF\_9 & Obbligatorio & L'utente deve poter inserire il raggio d'azione del sensore nel sistema & Capitolato, UC\\ %manca uc?%
+
+        \hline
+        RF\_10 & Obbligatorio & L'utente deve essere in grado di visualizzare quali aree sono illuminate in un dato momento & Capitolato, UC2\\
+
+        \hline
+        RF\_11 & Obbligatorio & L'utente deve poter impostare la modalità dell'area di illuminazione come manuale & Capitolato, UC21\\
+
+        \hline
+        RF\_12 & Obbligatorio & L'utente deve poter impostare la modalità dell'area di illuminazione come automatica & Capitolato, UC22\\
+
+        \hline
+        RF\_13 & Obbligatorio & L'utente deve poter modificare la luminosità dei lampioni del sistema a livello globale & Capitolato, UC23\\
+
+        \hline
+        RF\_14 & Opzionale & Il sistema deve essere in grado di regolare automaticamente l'intensità luminosa dei lampioni in caso rilevi valori fuori soglia di luminosità ambientale & Capitolato\\
+
+        \hline
+        RF\_15 & Opzionale & Il sistema deve essere in grado di rilevare automaticamente guasti nei lampioni & Capitolato \\
+
+        \hline
+        RF\_16 & Obbligatorio & L'utente deve essere in grado di segnalare manualmente guasti nei lampioni & Capitolato, UC6 \\
+
+        \hline
+        RF\_17 & Opzionale & Il gestore deve poter visualizzare l'elenco degli impianti guasti & Capitolato, UC07 \\
+
+        \hline
+        RF\_18 & Obbligatorio & L'utente manutentore deve essere in grado di chiudere le segnalazioni di guasto dalla lista guasti & Capitolato, UC9 \\
+
+        \hline
+        RF\_19 & Obbligatorio & Il sistema deve essere in grado di ricevere informazioni dal sensore in modalità Push & Capitolato \\
+
+        \hline
+        RF\_20 & Opzionale & Il sistema deve essere in grado di ricevere informazioni dal sensore in modalità Pull & Capitolato \\
+
+        \hline
+    \end{xltabular}
+\end{center}
+
+
+\section{Requisiti di qualità}
+\begin{center}
+    \begin{xltabular}{\linewidth}{|l|l|X|l|}
+    \hline
+    \rowcolor[gray]{0.9}
+    \textbf{Codice} & \textbf{Classificazione} & \textbf{Descrizione} & \textbf{Fonti} \\
+    \hline
+    RQ\_01 & Obbligatorio & Il progetto deve includere un manuale utente che fornisca spiegazione dettagliate sulle funzionalità dell'applicativo & Capitolato \\
+
+    \hline
+    RQ\_02 & Obbligatorio & Il progetto deve includere un manuale per sviluppatori che fornisca spiegazione dettagliate su come svolgere manutenzione sull'applicativo & Capitolato \\
+
+    \hline
+    RQ\_03 & Obbligatorio & Il progetto deve essere pubblicato su una repository pubblica & Capitolato \\
+
+    \hline
+    RQ\_04 & Obbligatorio & Il prodotto deve essere sviluppato seguendo le indicazioni definite nelle Norme di Progetto & VIN\_20221129 \\
+
+    \hline
+    RQ\_05 & Obbligatorio & Il codice del progetto deve essere open-source & Capitolato \\
+
+    \hline
+    RQ\_06 & Desiderabile & Le comunicazioni tra client e server devono essere cifrate & Capitolato \\
+
+    \hline
+    RQ\_07 & Opzionale & Il progetto deve fornire un'analisi su quale servizio cloud sia più adatto a supportare il sistema & Capitolato \\
+
+    \hline
+    RQ\_08 & Obbligatorio & Il progetto deve essere fornito di copertura di test deve essere non inferiore all'80\% che devono essere documentati tramite report & Capitolato \\
+
+    \hline
+    RQ\_09 & Opzionale & La copertura del codice deve essere visibile tramite SonarQube & VIN\_20221129 \\
+
+    \hline
+
+    \end{xltabular}
+
+\end{center}
+
+\section{Requisiti di vincolo}
+
+\begin{center}
+    \begin{xltabular}{\linewidth}{|l|l|X|l|}
+    \hline
+    \rowcolor[gray]{0.9}
+    \textbf{Codice} & \textbf{Classificazione} & \textbf{Descrizione} & \textbf{Fonti} \\
+    \hline
+    RV\_01 & Obbligatorio & L'applicazione deve essere visualizzabile su dispositivi mobile & Capitolato \\
+
+    \hline
+    RV\_02 & Obbligatorio & L'applicazione client deve poter essere utilizzata sulla versione 110.0 di Chrome  & Capitolato \\
+
+    \hline
+    RV\_03 & Obbligatorio & L'applicazione client deve poter essere utilizzata sulla versione 110.0 di Firefox  & Capitolato \\
+
+    \hline
+    RV\_04 & Obbligatorio & L'applicazione client deve poter essere utilizzata sulla versione 16.3 di Safari  & Capitolato \\
+
+    \hline
+    RV\_05 & Obbligatorio & L'applicazione client deve essere conforme almeno al livello AA delle WCAG  & VIN\_20221129 \\
+
+    \hline
+    RV\_06 & Desiderabile & Il sistema deve essere scalabile orizzontalmente  & VIN\_20221129 \\
+
+    \hline
+
+    \end{xltabular}
+    \end{center}
+
+\section{Conclusioni}
