@@ -40,11 +40,14 @@ Strumento per rilevare automaticamente i guasti, può aprire ticket di guasto;
 \paragraph{Lampione} 
 Oggetto utilizzato per l'emissione della luce;
 
-\paragraph{Coordination service} 
-Sistema che si occupa di coordinare le varie funzioni di aggiunta e gestione;
+\paragraph{Sistema di ticketing}
+Sistema che si occupa di raggruppare e organizzare i ticket di guasto.
 
-\paragraph{Auth service} 
-Sistema che si occupa di controllare le credenziali di un utente che si vuole autenticare.
+% \paragraph{Coordination service} 
+% Sistema che si occupa di coordinare le varie funzioni di aggiunta e gestione;
+
+% \paragraph{Auth service} 
+% Sistema che si occupa di controllare le credenziali di un utente che si vuole autenticare.
 
 \section{Vincoli progettuali}
 
@@ -72,9 +75,10 @@ Il progetto pone alcuni vincoli preventivi su consegna, tecnologie e prestazioni
 
 \subsection{Vincoli prestazionali}
 
-Il sistema suppone di utilizzare istanze da massimo 2 CPU e 1GB di memoria.
-
-Si richiede poi, tenendo presente quanto sopra detto, un'analisi di carico massimo e di servizi cloud più adatti a supportare il sistema.
+\begin{itemize}
+    \item Il sistema suppone di utilizzare istanze da massimo 2 CPU e 1GB di memoria.
+    \item Si richiede poi, tenendo presente quanto sopra detto, un'analisi di carico massimo e di servizi cloud più adatti a supportare il sistema.
+\end{itemize}
 
 \subsection{Vincoli aggiuntivi e opzionali}
 \begin{itemize}
